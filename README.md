@@ -29,6 +29,7 @@ O projeto visa simular as principais operações do dia a dia de uma farmácia m
 ├── .gitignore                   # Arquivos ignorados pelo Git
 ├── docs/                        # Documentação de requisitos e arquitetura
 │   ├── requisitos.md            # Especificação dos requisitos funcionais e não funcionais
+│   ├── casos_de_uso_mvp.md      # Histórias de Usuários, Casos de Uso (UML) e MVP (Valente, Cap. 3)
 │   └── arquitetura.md           # Decisões arquiteturais, módulos e fluxo de dados
 ├── include/                     # Arquivos de cabeçalho (.h)
 │   ├── common.h                 # Constantes globais, enums de status e tipos utilitários
