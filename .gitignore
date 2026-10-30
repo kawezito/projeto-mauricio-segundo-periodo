@@ -1,0 +1,17 @@
+# Binários e objetos compilados
+build/
+bin/
+*.o
+*.out
+
+# Banco de dados e dados locais gerados
+data/*.db
+data/*.dat
+data/*.log
+
+# Arquivos de IDE e editor
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
