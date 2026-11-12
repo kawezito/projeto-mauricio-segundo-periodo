@@ -1,0 +1,110 @@
+[
+    {
+        "id": 12,
+        "medicamento_id": 2,
+        "tipo": "SAIDA",
+        "quantidade": 1,
+        "data_movimentacao": "2026-11-12T17:22:08",
+        "descricao": "Saída por Venda #4",
+        "medicamento_nome": "Amoxicilina 500mg"
+    },
+    {
+        "id": 11,
+        "medicamento_id": 1,
+        "tipo": "SAIDA",
+        "quantidade": 2,
+        "data_movimentacao": "2026-11-12T17:22:08",
+        "descricao": "Saída por Venda #4",
+        "medicamento_nome": "Paracetamol 750mg"
+    },
+    {
+        "id": 10,
+        "medicamento_id": 2,
+        "tipo": "ENTRADA",
+        "quantidade": 12,
+        "data_movimentacao": "2026-11-12T17:22:08",
+        "descricao": "Chegada de pedido distribuidora",
+        "medicamento_nome": "Amoxicilina 500mg"
+    },
+    {
+        "id": 9,
+        "medicamento_id": 2,
+        "tipo": "SAIDA",
+        "quantidade": 1,
+        "data_movimentacao": "2026-11-12T17:03:45",
+        "descricao": "Saída por Venda #3",
+        "medicamento_nome": "Amoxicilina 500mg"
+    },
+    {
+        "id": 8,
+        "medicamento_id": 1,
+        "tipo": "SAIDA",
+        "quantidade": 2,
+        "data_movimentacao": "2026-11-12T17:03:45",
+        "descricao": "Saída por Venda #3",
+        "medicamento_nome": "Paracetamol 750mg"
+    },
+    {
+        "id": 7,
+        "medicamento_id": 2,
+        "tipo": "ENTRADA",
+        "quantidade": 12,
+        "data_movimentacao": "2026-11-12T17:03:45",
+        "descricao": "Chegada de pedido distribuidora",
+        "medicamento_nome": "Amoxicilina 500mg"
+    },
+    {
+        "id": 6,
+        "medicamento_id": 2,
+        "tipo": "SAIDA",
+        "quantidade": 1,
+        "data_movimentacao": "2026-11-12T17:02:02",
+        "descricao": "Saída por Venda #2",
+        "medicamento_nome": "Amoxicilina 500mg"
+    },
+    {
+        "id": 5,
+        "medicamento_id": 1,
+        "tipo": "SAIDA",
+        "quantidade": 2,
+        "data_movimentacao": "2026-11-12T17:02:02",
+        "descricao": "Saída por Venda #2",
+        "medicamento_nome": "Paracetamol 750mg"
+    },
+    {
+        "id": 4,
+        "medicamento_id": 2,
+        "tipo": "ENTRADA",
+        "quantidade": 12,
+        "data_movimentacao": "2026-11-12T17:02:02",
+        "descricao": "Chegada de pedido distribuidora",
+        "medicamento_nome": "Amoxicilina 500mg"
+    },
+    {
+        "id": 3,
+        "medicamento_id": 2,
+        "tipo": "SAIDA",
+        "quantidade": 1,
+        "data_movimentacao": "2026-11-12T16:38:23",
+        "descricao": "Saída por Venda #1",
+        "medicamento_nome": "Amoxicilina 500mg"
+    },
+    {
+        "id": 2,
+        "medicamento_id": 1,
+        "tipo": "SAIDA",
+        "quantidade": 2,
+        "data_movimentacao": "2026-11-12T16:38:23",
+        "descricao": "Saída por Venda #1",
+        "medicamento_nome": "Paracetamol 750mg"
+    },
+    {
+        "id": 1,
+        "medicamento_id": 2,
+        "tipo": "ENTRADA",
+        "quantidade": 12,
+        "data_movimentacao": "2026-11-12T16:38:23",
+        "descricao": "Chegada de pedido distribuidora",
+        "medicamento_nome": "Amoxicilina 500mg"
+    }
+]

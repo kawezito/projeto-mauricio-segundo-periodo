@@ -1,0 +1,14 @@
+[
+    {
+        "id": 2,
+        "nome": "Lucas Ferreira",
+        "telefone": "(85) 97777-3344",
+        "email": "lucas@email.com"
+    },
+    {
+        "id": 1,
+        "nome": "Mariana Souza",
+        "telefone": "(85) 98888-1122",
+        "email": "mariana@email.com"
+    }
+]
