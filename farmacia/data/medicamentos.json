@@ -1,0 +1,41 @@
+[
+    {
+        "id": 2,
+        "codigo": "7892020",
+        "nome": "Amoxicilina 500mg",
+        "fabricante": "Medley",
+        "categoria": "Antibiótico",
+        "apresentacao": "Cápsula",
+        "preco_centavos": 2890,
+        "preco_reais": 28.9,
+        "estoque": 52,
+        "estoque_minimo": 10,
+        "data_validade": "2026-10-15"
+    },
+    {
+        "id": 3,
+        "codigo": "7893030",
+        "nome": "Ibuprofeno 600mg",
+        "fabricante": "Neo Química",
+        "categoria": "Anti-inflamatório",
+        "apresentacao": "Comprimido",
+        "preco_centavos": 1800,
+        "preco_reais": 18.0,
+        "estoque": 50,
+        "estoque_minimo": 15,
+        "data_validade": "2027-08-20"
+    },
+    {
+        "id": 1,
+        "codigo": "7891010",
+        "nome": "Paracetamol 750mg",
+        "fabricante": "EMS",
+        "categoria": "Analgésico",
+        "apresentacao": "Comprimido",
+        "preco_centavos": 1250,
+        "preco_reais": 12.5,
+        "estoque": 22,
+        "estoque_minimo": 10,
+        "data_validade": "2027-12-31"
+    }
+]

@@ -1,13 +1,13 @@
-# Binários e objetos compilados
-build/
-bin/
-*.o
-*.out
-
-# Banco de dados e dados locais gerados
-data/*.db
-data/*.dat
-data/*.log
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.pytest_cache/
 
 # Arquivos de IDE e editor
 .vscode/
@@ -15,3 +15,7 @@ data/*.log
 *.swp
 *~
 .DS_Store
+
+# Relatórios CSV gerados em tempo de execução (preservar .gitkeep)
+farmacia/reports/*.csv
+reports/*.csv
