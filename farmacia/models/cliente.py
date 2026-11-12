@@ -1,5 +1,6 @@
 from typing import Optional
 
+
 class Cliente:
     def __init__(
         self,
@@ -14,7 +15,6 @@ class Cliente:
         self.email = email
 
     def to_dict(self) -> dict:
-        """Retorna os dados do cliente em formato de dicionário."""
         return {
             "id": self.id,
             "nome": self.nome,

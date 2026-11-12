@@ -1,13 +1,6 @@
-"""
-Sistema de Gerenciamento de Farmácia
-Interface Interativa de Terminal (CLI) — 100% Persistência em Arquivos (JSON e CSV).
-Sem banco de dados.
-"""
-
 import sys
 from pathlib import Path
 
-# Adiciona o diretório farmacia ao PYTHONPATH
 BASE_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(BASE_DIR))
 
@@ -36,7 +29,6 @@ from exceptions import (
 
 
 def inicializar_sistema():
-    """Inicializa os repositórios baseados em arquivos JSON e os serviços de negócio."""
     data_dir = BASE_DIR / "data"
     data_dir.mkdir(parents=True, exist_ok=True)
 
@@ -62,14 +54,10 @@ def inicializar_sistema():
     }
 
 
-# =====================================================================
-# SUBMENUS DE TERMINAL
-# =====================================================================
-
 def menu_medicamentos(med_service: MedicamentoService):
     while True:
         print("\n" + "=" * 50)
-        print("💊 GERENCIAMENTO DE MEDICAMENTOS (ARQUIVOS)")
+        print("GERENCIAMENTO DE MEDICAMENTOS")
         print("=" * 50)
         print("1. Cadastrar Medicamento")
         print("2. Listar Todos os Medicamentos")
@@ -81,13 +69,12 @@ def menu_medicamentos(med_service: MedicamentoService):
         opcao = input("\nEscolha uma opção: ").strip()
 
         if opcao == "1":
-            print("\n--- Novo Medicamento ---")
             try:
                 codigo = input("Código único: ").strip()
                 nome = input("Nome comercial: ").strip()
                 fabricante = input("Fabricante: ").strip()
-                categoria = input("Categoria (ex: Analgésico): ").strip()
-                apresentacao = input("Apresentação (ex: Comprimido, Xarope): ").strip()
+                categoria = input("Categoria: ").strip()
+                apresentacao = input("Apresentação: ").strip()
                 preco = input("Preço de venda (R$): ").strip()
                 estoque = input("Quantidade em estoque inicial [0]: ").strip() or "0"
                 estoque_minimo = input("Quantidade mínima de alerta [0]: ").strip() or "0"
@@ -105,15 +92,14 @@ def menu_medicamentos(med_service: MedicamentoService):
                     "data_validade": validade,
                 })
                 print(f"\n[SUCESSO] Medicamento '{med.nome}' cadastrado com sucesso! ID: {med.id}")
-                print("[INFO] Gravado no arquivo físico 'data/medicamentos.json'")
             except FarmaciaError as err:
-                print(f"\n[ERRO DE NEGÓCIO] {err}")
+                print(f"\n[ERRO] {err}")
             except ValueError:
                 print("\n[ERRO] Valores numéricos inválidos.")
 
         elif opcao == "2":
             meds = med_service.listar_todos()
-            print(f"\n--- Total de Medicamentos no Arquivo: {len(meds)} ---")
+            print(f"\n--- Total de Medicamentos: {len(meds)} ---")
             if not meds:
                 print("Nenhum medicamento cadastrado.")
             for m in meds:
@@ -140,7 +126,7 @@ def menu_medicamentos(med_service: MedicamentoService):
             try:
                 med_id = int(input("ID do medicamento para alterar: ").strip())
                 med = med_service.buscar_por_id(med_id)
-                print(f"Alterando: {med.nome} (Deixe em branco para manter o valor atual)")
+                print(f"Alterando: {med.nome}")
 
                 nome = input(f"Novo nome [{med.nome}]: ").strip() or med.nome
                 fabricante = input(f"Novo fabricante [{med.fabricante}]: ").strip() or med.fabricante
@@ -161,7 +147,7 @@ def menu_medicamentos(med_service: MedicamentoService):
                     "estoque_minimo": int(minimo),
                     "data_validade": validade,
                 })
-                print("\n[SUCESSO] Medicamento atualizado no arquivo JSON!")
+                print("\n[SUCESSO] Medicamento atualizado!")
             except FarmaciaError as err:
                 print(f"\n[ERRO] {err}")
             except ValueError:
@@ -171,9 +157,9 @@ def menu_medicamentos(med_service: MedicamentoService):
             try:
                 med_id = int(input("ID do medicamento a excluir: ").strip())
                 med_service.excluir(med_id)
-                print("\n[SUCESSO] Medicamento removido com sucesso do arquivo JSON!")
+                print("\n[SUCESSO] Medicamento removido com sucesso!")
             except FarmaciaError as err:
-                print(f"\n[BLOQUEIO DE SEGURANÇA] {err}")
+                print(f"\n[BLOQUEIO] {err}")
             except ValueError:
                 print("\n[ERRO] ID inválido.")
 
@@ -184,7 +170,7 @@ def menu_medicamentos(med_service: MedicamentoService):
 def menu_clientes(cli_service: ClienteService):
     while True:
         print("\n" + "=" * 50)
-        print("👥 GERENCIAMENTO DE CLIENTES (ARQUIVOS)")
+        print("GERENCIAMENTO DE CLIENTES")
         print("=" * 50)
         print("1. Cadastrar Cliente")
         print("2. Listar Todos os Clientes")
@@ -195,20 +181,18 @@ def menu_clientes(cli_service: ClienteService):
         opcao = input("\nEscolha uma opção: ").strip()
 
         if opcao == "1":
-            print("\n--- Novo Cliente ---")
             try:
                 nome = input("Nome completo: ").strip()
                 telefone = input("Telefone (opcional): ").strip()
                 email = input("E-mail (opcional): ").strip()
                 c = cli_service.cadastrar({"nome": nome, "telefone": telefone, "email": email})
                 print(f"\n[SUCESSO] Cliente '{c.nome}' cadastrado com sucesso! ID: {c.id}")
-                print("[INFO] Gravado no arquivo 'data/clientes.json'")
             except FarmaciaError as err:
                 print(f"\n[ERRO] {err}")
 
         elif opcao == "2":
             clis = cli_service.listar_todos()
-            print(f"\n--- Total de Clientes no Arquivo: {len(clis)} ---")
+            print(f"\n--- Total de Clientes: {len(clis)} ---")
             if not clis:
                 print("Nenhum cliente cadastrado.")
             for c in clis:
@@ -230,7 +214,7 @@ def menu_clientes(cli_service: ClienteService):
                 email = input(f"Novo email [{cli.email or ''}]: ").strip() or cli.email
 
                 cli_service.atualizar(c_id, {"nome": nome, "telefone": telefone, "email": email})
-                print("\n[SUCESSO] Dados do cliente atualizados no arquivo JSON!")
+                print("\n[SUCESSO] Dados do cliente atualizados!")
             except FarmaciaError as err:
                 print(f"\n[ERRO] {err}")
             except ValueError:
@@ -240,7 +224,7 @@ def menu_clientes(cli_service: ClienteService):
             try:
                 c_id = int(input("ID do cliente a excluir: ").strip())
                 cli_service.excluir(c_id)
-                print("\n[SUCESSO] Cliente excluído do arquivo JSON!")
+                print("\n[SUCESSO] Cliente excluído!")
             except FarmaciaError as err:
                 print(f"\n[BLOQUEIO] {err}")
             except ValueError:
@@ -253,7 +237,7 @@ def menu_clientes(cli_service: ClienteService):
 def menu_estoque(est_service: EstoqueService):
     while True:
         print("\n" + "=" * 50)
-        print("📦 CONTROLE DE ESTOQUE (ARQUIVOS)")
+        print("CONTROLE DE ESTOQUE")
         print("=" * 50)
         print("1. Registrar Entrada de Estoque (Reposição)")
         print("2. Consultar Medicamentos com Estoque Baixo")
@@ -271,7 +255,6 @@ def menu_estoque(est_service: EstoqueService):
                 res = est_service.registrar_entrada(med_id, qtd, descricao=motivo)
                 print(f"\n[SUCESSO] Entrada confirmada!")
                 print(f"Medicamento: {res['medicamento_nome']} | Estoque anterior: {res['estoque_anterior']} | Novo estoque: {res['novo_estoque']}")
-                print("[INFO] Atualizado em 'data/medicamentos.json' e 'data/movimentacoes.json'")
             except FarmaciaError as err:
                 print(f"\n[ERRO] {err}")
             except ValueError:
@@ -279,7 +262,7 @@ def menu_estoque(est_service: EstoqueService):
 
         elif opcao == "2":
             baixos = est_service.consultar_estoque_baixo()
-            print(f"\n--- Medicamentos com Estoque Baixo ou Crítico ({len(baixos)}) ---")
+            print(f"\n--- Medicamentos com Estoque Baixo ({len(baixos)}) ---")
             if not baixos:
                 print("Nenhum medicamento em nível crítico.")
             for m in baixos:
@@ -307,7 +290,7 @@ def menu_estoque(est_service: EstoqueService):
 
         elif opcao == "5":
             movs = est_service.listar_historico_movimentacoes()
-            print(f"\n--- Histórico Geral de Movimentações ({len(movs)}) ---")
+            print(f"\n--- Histórico de Movimentações ({len(movs)}) ---")
             for mv in movs[:15]:
                 print(f"{mv.get('data_movimentacao')} | Tipo: {mv.get('tipo'):<7} | Qtd: {mv.get('quantidade'):>3} un. | {mv.get('medicamento_nome')} | {mv.get('descricao')}")
 
@@ -318,7 +301,7 @@ def menu_estoque(est_service: EstoqueService):
 def menu_vendas(venda_service: VendaService, med_service: MedicamentoService, cli_service: ClienteService):
     while True:
         print("\n" + "=" * 50)
-        print("🛒 PONTO DE VENDA (PDV) / REGISTRO DE VENDAS")
+        print("PONTO DE VENDA (PDV) / REGISTRO DE VENDAS")
         print("=" * 50)
         print("1. Nova Venda (Carrinho de Compras)")
         print("2. Consultar Todas as Vendas")
@@ -328,22 +311,20 @@ def menu_vendas(venda_service: VendaService, med_service: MedicamentoService, cl
         opcao = input("\nEscolha uma opção: ").strip()
 
         if opcao == "1":
-            print("\n--- Abertura de Venda ---")
-            cli_id_input = input("ID do Cliente (deixe vazio para cliente não identificado): ").strip()
+            cli_id_input = input("ID do Cliente (vazio para venda sem cadastro): ").strip()
             cliente_id = int(cli_id_input) if cli_id_input else None
 
             if cliente_id:
                 try:
                     c = cli_service.buscar_por_id(cliente_id)
-                    print(f"Cliente vinculado: {c.nome}")
+                    print(f"Cliente: {c.nome}")
                 except FarmaciaError as err:
                     print(f"[AVISO] {err}. Prosseguindo sem cliente.")
                     cliente_id = None
 
             carrinho = []
             while True:
-                print("\n[+] Adicionar Item ao Carrinho")
-                codigo_ou_id = input("Digite o ID ou Código do medicamento (ou 'F' para finalizar carrinho): ").strip()
+                codigo_ou_id = input("ID ou Código do medicamento ('F' para finalizar): ").strip()
                 if codigo_ou_id.upper() == "F":
                     break
 
@@ -353,37 +334,33 @@ def menu_vendas(venda_service: VendaService, med_service: MedicamentoService, cl
                     else:
                         med = med_service.buscar_por_codigo(codigo_ou_id)
 
-                    print(f"Selecionado: {med.nome} | Preço: R$ {med.preco_em_reais():.2f} | Estoque Disponível: {med.estoque}")
+                    print(f"Selecionado: {med.nome} | Preço: R$ {med.preco_em_reais():.2f} | Estoque: {med.estoque}")
                     qtd = int(input("Quantidade: ").strip())
                     if qtd <= 0:
                         print("[ERRO] Quantidade deve ser maior que zero.")
                         continue
 
                     carrinho.append({"medicamento_id": med.id, "quantidade": qtd})
-                    print(f"[OK] {qtd} un. de '{med.nome}' adicionadas ao carrinho!")
+                    print(f"[OK] {qtd} un. de '{med.nome}' adicionadas ao carrinho.")
                 except FarmaciaError as err:
                     print(f"[ERRO] {err}")
                 except ValueError:
                     print("[ERRO] Entrada inválida.")
 
             if not carrinho:
-                print("\n[AVISO] Venda cancelada: o carrinho está vazio.")
+                print("\n[AVISO] Venda cancelada: carrinho vazio.")
                 continue
 
-            print("\n--- Finalização da Venda ---")
             try:
                 venda = venda_service.registrar_venda(itens=carrinho, cliente_id=cliente_id)
-                print(f"\n🎉 VENDA #{venda.id} FINALIZADA COM SUCESSO!")
+                print(f"\nVENDA #{venda.id} FINALIZADA COM SUCESSO!")
                 print(f"Data: {venda.data_venda}")
                 print(f"Cliente: {venda.cliente_nome or 'Não Identificado'}")
-                print(f"VALOR TOTAL: R$ {venda.valor_total_em_reais():.2f}")
-                print("Itens comercializados:")
+                print(f"TOTAL: R$ {venda.valor_total_em_reais():.2f}")
                 for it in venda.itens:
                     print(f"  - {it.medicamento_nome} | Qtd: {it.quantidade} | Unit: R$ {it.preco_unitario_em_reais():.2f} | Subtotal: R$ {it.subtotal_em_reais():.2f}")
-                print("\n[INFO] Estoque baixado e venda gravada em 'data/vendas.json'")
             except FarmaciaError as err:
-                print(f"\n[FALHA NA VENDA - OPERAÇÃO CANCELADA] {err}")
-                print("[SEGURANÇA] Nenhuma alteração foi realizada nos arquivos em disco.")
+                print(f"\n[FALHA NA VENDA] {err}")
 
         elif opcao == "2":
             vendas = venda_service.listar_todas()
@@ -396,30 +373,23 @@ def menu_vendas(venda_service: VendaService, med_service: MedicamentoService, cl
             try:
                 v_id = int(input("Digite o ID da venda: ").strip())
                 v = venda_service.buscar_por_id(v_id)
-                print(f"\n==========================================")
-                print(f" DETALHES DA VENDA #{v.id}")
-                print(f"==========================================")
-                print(f"Data/Hora: {v.data_venda}")
-                print(f"Cliente:   {v.cliente_nome or 'Não Identificado'}")
-                print(f"Valor Total: R$ {v.valor_total_em_reais():.2f}")
-                print("-" * 42)
+                print(f"\nDETALHES DA VENDA #{v.id}")
+                print(f"Data: {v.data_venda} | Cliente: {v.cliente_nome or 'Não Identificado'}")
+                print(f"Total: R$ {v.valor_total_em_reais():.2f}")
                 for it in v.itens:
                     print(f" {it.medicamento_nome:<25} | Qtd: {it.quantidade:>2} | R$ {it.subtotal_em_reais():>6.2f}")
-                print("=" * 42)
             except FarmaciaError as err:
                 print(f"\n[ERRO] {err}")
             except ValueError:
                 print("\n[ERRO] ID inválido.")
 
         elif opcao == "4":
-            print("\nInforme o intervalo em formato AAAA-MM-DD:")
-            inicio = input("Data Inicial: ").strip() + "T00:00:00"
-            fim = input("Data Final:   ").strip() + "T23:59:59"
+            inicio = input("Data Inicial (AAAA-MM-DD): ").strip() + "T00:00:00"
+            fim = input("Data Final   (AAAA-MM-DD): ").strip() + "T23:59:59"
             try:
                 res = venda_service.consultar_resumo_periodo(inicio, fim)
-                print(f"\n--- Resumo de {inicio[:10]} até {fim[:10]} ---")
-                print(f"Total de vendas realizadas: {res['total_vendas']}")
-                print(f"Faturamento acumulado: R$ {res['valor_total_reais']:.2f}")
+                print(f"\nTotal de vendas: {res['total_vendas']}")
+                print(f"Faturamento: R$ {res['valor_total_reais']:.2f}")
             except FarmaciaError as err:
                 print(f"\n[ERRO] {err}")
 
@@ -430,12 +400,12 @@ def menu_vendas(venda_service: VendaService, med_service: MedicamentoService, cl
 def menu_relatorios_arquivos(rel_service: RelatorioService, sistema):
     while True:
         print("\n" + "=" * 50)
-        print("📁 RELATÓRIOS E EXPORTAÇÕES (CSV & JSON)")
+        print("RELATÓRIOS E EXPORTAÇÃO CSV")
         print("=" * 50)
         print("1. Ranking dos Medicamentos Mais Vendidos")
         print("2. Exportar Relatório de Estoque para CSV (UTF-8)")
         print("3. Exportar Histórico de Vendas para CSV (UTF-8)")
-        print("4. Exibir Arquivos Físicos Utilizados pelo Sistema")
+        print("4. Exibir Caminho dos Arquivos")
         print("0. Voltar ao Menu Principal")
         opcao = input("\nEscolha uma opção: ").strip()
 
@@ -445,25 +415,18 @@ def menu_relatorios_arquivos(rel_service: RelatorioService, sistema):
             print(f"\n--- Top {len(mais)} Medicamentos Mais Vendidos ---")
             for idx, item in enumerate(mais, 1):
                 receita = item.get("receita_total_reais", item.get("receita_total_centavos", 0) / 100)
-                print(f"{idx}º. {item['nome']:<25} | {item['total_unidades_vendidas']:>3} un. vendidas | Faturamento: R$ {receita:>7.2f}")
+                print(f"{idx}º. {item['nome']:<25} | {item['total_unidades_vendidas']:>3} un. | R$ {receita:>7.2f}")
 
         elif opcao == "2":
             caminho = rel_service.exportar_estoque_csv()
-            print(f"\n[SUCESSO] Relatório de Estoque gerado com sucesso em CSV!")
-            print(f"Arquivo gerado: {caminho}")
+            print(f"\n[SUCESSO] Relatório de Estoque salvo em CSV: {caminho}")
 
         elif opcao == "3":
             caminho = rel_service.exportar_vendas_csv()
-            print(f"\n[SUCESSO] Histórico de Vendas gerado com sucesso em CSV!")
-            print(f"Arquivo gerado: {caminho}")
+            print(f"\n[SUCESSO] Histórico de Vendas salvo em CSV: {caminho}")
 
         elif opcao == "4":
-            print("\n--- Arquivos Físicos Utilizados pelo Sistema ---")
-            print(f"Pasta de Dados (JSON): {sistema['data_dir']}")
-            print(f" - Medicamentos:       {sistema['data_dir'] / 'medicamentos.json'}")
-            print(f" - Clientes:           {sistema['data_dir'] / 'clientes.json'}")
-            print(f" - Vendas:             {sistema['data_dir'] / 'vendas.json'}")
-            print(f" - Movimentações:      {sistema['data_dir'] / 'movimentacoes.json'}")
+            print(f"\nPasta de Dados (JSON): {sistema['data_dir']}")
             print(f"Pasta de CSVs:         {rel_service.reports_dir}")
 
         elif opcao == "0":
@@ -476,14 +439,13 @@ def main():
     while True:
         print("\n" + "=" * 60)
         print("  SISTEMA DE GERENCIAMENTO DE FARMÁCIA (TERMINAL CLI)")
-        print("  Persistência: 100% Manipulação de Arquivos (JSON & CSV)")
         print("=" * 60)
-        print("1. 💊 Medicamentos (Cadastro, Busca, Edição, Exclusão)")
-        print("2. 👥 Clientes (Cadastro, Consulta, Edição)")
-        print("3. 📦 Estoque (Entradas, Nível Baixo, Vencimento)")
-        print("4. 🛒 Vendas / PDV (Carrinho, Baixa Automática, Validação)")
-        print("5. 📁 Relatórios e Exportação CSV (UTF-8)")
-        print("0. 🚪 Sair do Sistema")
+        print("1. Medicamentos (Cadastro, Busca, Edição, Exclusão)")
+        print("2. Clientes (Cadastro, Consulta, Edição)")
+        print("3. Estoque (Entradas, Nível Baixo, Vencimento)")
+        print("4. Vendas / PDV (Carrinho, Baixa Automática, Validação)")
+        print("5. Relatórios e Exportação CSV (UTF-8)")
+        print("0. Sair do Sistema")
         print("=" * 60)
 
         opcao = input("Digite a opção desejada: ").strip()
@@ -500,7 +462,6 @@ def main():
             menu_relatorios_arquivos(sistema["rel_service"], sistema)
         elif opcao == "0":
             print("\nEncerrando o sistema...")
-            print("Dados preservados com sucesso nos arquivos JSON!\n")
             break
         else:
             print("\n[AVISO] Opção inválida. Digite um número de 0 a 5.")

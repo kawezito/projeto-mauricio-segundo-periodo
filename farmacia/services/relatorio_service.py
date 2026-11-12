@@ -11,11 +11,6 @@ DEFAULT_REPORTS_DIR = Path(__file__).resolve().parent.parent / "reports"
 
 
 class RelatorioService:
-    """
-    Serviço que implementa a geração de relatórios e exportação CSV (RF10, RF11).
-    Demonstra matrizes (listas de listas) e manipulação de arquivos CSV nativos.
-    """
-
     def __init__(
         self,
         med_repo: MedicamentoRepository,
@@ -29,16 +24,10 @@ class RelatorioService:
         self.reports_dir = Path(reports_dir) if reports_dir else DEFAULT_REPORTS_DIR
         self.reports_dir.mkdir(parents=True, exist_ok=True)
 
-    # -------------------------------------------------------------
-    # RF10: Relatórios Estruturados (Dicionários para Consumo da UI)
-    # -------------------------------------------------------------
-
     def relatorio_medicamentos_cadastrados(self) -> List[Dict[str, Any]]:
-        """Retorna todos os medicamentos cadastrados em formato de dicionário."""
         return [m.to_dict() for m in self.med_repo.listar_todos()]
 
     def relatorio_estoque_atual(self) -> List[Dict[str, Any]]:
-        """Retorna a situação de estoque de todos os medicamentos com indicação de status."""
         medicamentos = self.med_repo.listar_todos()
         resultado = []
         for m in medicamentos:
@@ -54,20 +43,16 @@ class RelatorioService:
         return resultado
 
     def relatorio_estoque_baixo(self) -> List[Dict[str, Any]]:
-        """Retorna medicamentos com estoque abaixo ou igual ao mínimo."""
         return [m.to_dict() for m in self.med_repo.buscar_estoque_baixo()]
 
     def relatorio_proximos_vencimento(self, dias: int = 30) -> List[Dict[str, Any]]:
-        """Retorna medicamentos vencidos ou a vencer em até N dias."""
         data_limite = (datetime.now() + timedelta(days=dias)).strftime("%Y-%m-%d")
         return [m.to_dict() for m in self.med_repo.buscar_proximos_vencimento(data_limite)]
 
     def relatorio_historico_vendas(self) -> List[Dict[str, Any]]:
-        """Retorna todas as vendas com seus itens detalhados."""
         return [v.to_dict() for v in self.venda_repo.listar_todas()]
 
     def relatorio_total_vendas_por_periodo(self, data_inicio: str, data_fim: str) -> Dict[str, Any]:
-        """Calcula o resumo agregado de faturamento por período."""
         dados = self.venda_repo.total_vendas_por_periodo(data_inicio, data_fim)
         centavos = dados.get("valor_total_centavos", 0)
         reais = (Decimal(centavos) / Decimal(100)).quantize(Decimal("0.01"))
@@ -80,7 +65,6 @@ class RelatorioService:
         }
 
     def relatorio_medicamentos_mais_vendidos(self, limite: int = 10) -> List[Dict[str, Any]]:
-        """Retorna ranking dos medicamentos mais vendidos."""
         ranking = self.venda_repo.medicamentos_mais_vendidos(limite)
         resultado = []
         for item in ranking:
@@ -90,16 +74,7 @@ class RelatorioService:
             resultado.append(d)
         return resultado
 
-    # -------------------------------------------------------------
-    # Requisito 7.4: Matriz Tabular (Lista de Listas)
-    # -------------------------------------------------------------
-
     def gerar_matriz_estoque(self) -> List[List[Any]]:
-        """
-        Monta uma matriz (lista de listas):
-        Linha 0: Cabeçalho das colunas.
-        Linhas seguintes: Dados dos medicamentos formatados.
-        """
         cabecalho = [
             "ID",
             "Código",
@@ -140,9 +115,6 @@ class RelatorioService:
         return matriz
 
     def gerar_matriz_vendas(self) -> List[List[Any]]:
-        """
-        Monta uma matriz (lista de listas) com o histórico de vendas.
-        """
         cabecalho = ["ID Venda", "Data/Hora", "Cliente", "Total Itens", "Valor Total (R$)"]
         matriz: List[List[Any]] = [cabecalho]
 
@@ -159,12 +131,7 @@ class RelatorioService:
 
         return matriz
 
-    # -------------------------------------------------------------
-    # RF11 / Requisito 7.7: Manipulação e Exportação CSV (UTF-8)
-    # -------------------------------------------------------------
-
     def exportar_matriz_para_csv(self, matriz: List[List[Any]], caminho_arquivo: Path | str) -> str:
-        """Grava uma matriz em arquivo CSV delimitado por ponto e vírgula com UTF-8."""
         caminho = Path(caminho_arquivo)
         caminho.parent.mkdir(parents=True, exist_ok=True)
 
@@ -176,16 +143,13 @@ class RelatorioService:
         return str(caminho.resolve())
 
     def exportar_estoque_csv(self, nome_arquivo: Optional[str] = None) -> str:
-        """RF11: Exporta relatório de estoque para a pasta reports/."""
         nome = nome_arquivo or f"relatorio_estoque_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
         caminho = self.reports_dir / nome
         matriz = self.gerar_matriz_estoque()
         return self.exportar_matriz_para_csv(matriz, caminho)
 
     def exportar_vendas_csv(self, nome_arquivo: Optional[str] = None) -> str:
-        """RF11: Exporta histórico de vendas para a pasta reports/."""
         nome = nome_arquivo or f"relatorio_vendas_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
         caminho = self.reports_dir / nome
         matriz = self.gerar_matriz_vendas()
         return self.exportar_matriz_para_csv(matriz, caminho)
-

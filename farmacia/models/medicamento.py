@@ -1,5 +1,6 @@
 from typing import Optional
 
+
 class Medicamento:
     def __init__(
         self,
@@ -26,11 +27,9 @@ class Medicamento:
         self.estoque_minimo = estoque_minimo
 
     def preco_em_reais(self) -> float:
-        """Converte centavos inteiros para valor em reais (float)."""
         return self.preco_centavos / 100
 
     def to_dict(self) -> dict:
-        """Retorna o objeto estruturado como dicionário."""
         return {
             "id": self.id,
             "codigo": self.codigo,

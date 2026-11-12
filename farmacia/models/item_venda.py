@@ -21,15 +21,12 @@ class ItemVenda:
         self.medicamento_nome = medicamento_nome
 
     def preco_unitario_em_reais(self) -> float:
-        """Retorna o preço unitário praticado na venda em reais."""
         return self.preco_unitario_centavos / 100
 
     def subtotal_em_reais(self) -> float:
-        """Retorna o subtotal do item em reais."""
         return self.subtotal_centavos / 100
 
     def to_dict(self) -> dict:
-        """Retorna os dados do item da venda em formato de dicionário."""
         return {
             "id": self.id,
             "venda_id": self.venda_id,
@@ -41,4 +38,3 @@ class ItemVenda:
             "subtotal_centavos": self.subtotal_centavos,
             "subtotal_reais": self.subtotal_em_reais(),
         }
-

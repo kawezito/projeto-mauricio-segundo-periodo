@@ -9,16 +9,10 @@ from exceptions import (
 
 
 class ClienteService:
-    """
-    Serviço que implementa as regras de negócio de clientes (RF09)
-    persistindo diretamente através do repositório de arquivos.
-    """
-
     def __init__(self, repo: ClienteRepository):
         self.repo = repo
 
     def cadastrar(self, dados: Dict[str, Any]) -> Cliente:
-        """Cadastra um novo cliente com validação de nome obrigatório."""
         nome = str(dados.get("nome", "")).strip()
         telefone = dados.get("telefone")
         email = dados.get("email")
@@ -35,7 +29,6 @@ class ClienteService:
         return cliente
 
     def atualizar(self, cliente_id: int, dados: Dict[str, Any]) -> Cliente:
-        """Atualiza informações de um cliente existente no arquivo."""
         cliente = self.repo.buscar_por_id(cliente_id)
         if cliente is None:
             raise ClienteNaoEncontradoError(f"Cliente de ID {cliente_id} não encontrado.")
@@ -55,7 +48,6 @@ class ClienteService:
         return cliente
 
     def excluir(self, cliente_id: int) -> bool:
-        """Exclui cliente, respeitando integridade referencial com histórico de vendas."""
         cliente = self.repo.buscar_por_id(cliente_id)
         if cliente is None:
             raise ClienteNaoEncontradoError(f"Cliente de ID {cliente_id} não encontrado.")
@@ -68,19 +60,15 @@ class ClienteService:
         return self.repo.excluir(cliente_id)
 
     def buscar_por_id(self, cliente_id: int) -> Cliente:
-        """Busca cliente por identificador."""
         cliente = self.repo.buscar_por_id(cliente_id)
         if cliente is None:
             raise ClienteNaoEncontradoError(f"Cliente de ID {cliente_id} não encontrado.")
         return cliente
 
     def pesquisar_por_nome(self, termo: str) -> List[Cliente]:
-        """Pesquisa clientes por parte do nome (case-insensitive)."""
         if not termo or not termo.strip():
             return self.listar_todos()
         return self.repo.buscar_por_nome(termo.strip())
 
     def listar_todos(self) -> List[Cliente]:
-        """Lista todos os clientes cadastrados."""
         return self.repo.listar_todos()
-

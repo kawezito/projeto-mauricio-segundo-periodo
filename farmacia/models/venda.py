@@ -1,6 +1,7 @@
 from typing import Optional, List
 from .item_venda import ItemVenda
 
+
 class Venda:
     def __init__(
         self,
@@ -19,16 +20,13 @@ class Venda:
         self.itens: List[ItemVenda] = itens if itens is not None else []
 
     def valor_total_em_reais(self) -> float:
-        """Retorna o valor total da venda convertido em reais."""
         return self.valor_total_centavos / 100
 
     def adicionar_item(self, item: ItemVenda) -> None:
-        """Adiciona um item à venda e recalcula o total automaticamente."""
         self.itens.append(item)
         self.valor_total_centavos += item.subtotal_centavos
 
     def to_dict(self) -> dict:
-        """Retorna os dados da venda e de seus itens em formato de dicionário."""
         return {
             "id": self.id,
             "cliente_id": self.cliente_id,

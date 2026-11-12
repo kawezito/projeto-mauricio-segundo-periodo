@@ -13,16 +13,10 @@ from exceptions import (
 
 
 class MedicamentoService:
-    """
-    Serviço que implementa as regras de negócio de medicamentos (RF01, RF02, RF03, RF04)
-    persistindo diretamente através do repositório de arquivos.
-    """
-
     def __init__(self, repo: MedicamentoRepository):
         self.repo = repo
 
     def _validar_data(self, data_str: str) -> str:
-        """Valida se a data de validade está no padrão ISO 8601 (AAAA-MM-DD) e é válida."""
         data_limpa = str(data_str).strip()
         if not re.match(r"^\d{4}-\d{2}-\d{2}$", data_limpa):
             raise ValidacaoError("Data de validade deve estar no formato AAAA-MM-DD.")
@@ -33,7 +27,6 @@ class MedicamentoService:
         return data_limpa
 
     def _converter_preco_centavos(self, valor: Any) -> int:
-        """Converte valor em reais (float, int, string ou Decimal) para centavos inteiros."""
         if valor is None:
             raise ValidacaoError("Preço de venda é obrigatório.")
         try:
@@ -47,9 +40,6 @@ class MedicamentoService:
         return int(round(dec * 100))
 
     def cadastrar(self, dados: Dict[str, Any]) -> Medicamento:
-        """
-        RF01: Cadastra um novo medicamento com validação de dados obrigatórios e código único.
-        """
         codigo = str(dados.get("codigo", "")).strip()
         nome = str(dados.get("nome", "")).strip()
         fabricante = str(dados.get("fabricante", "")).strip()
@@ -57,7 +47,6 @@ class MedicamentoService:
         apresentacao = str(dados.get("apresentacao", "")).strip()
         data_validade = str(dados.get("data_validade", "")).strip()
 
-        # Validações de campos obrigatórios (Condicionais if/else)
         if not codigo:
             raise ValidacaoError("O campo 'codigo' é obrigatório.")
         if not nome:
@@ -73,7 +62,6 @@ class MedicamentoService:
 
         data_validada = self._validar_data(data_validade)
 
-        # Trata preço informado em reais ou em centavos
         if "preco_centavos" in dados:
             preco_centavos = int(dados["preco_centavos"])
             if preco_centavos < 0:
@@ -91,7 +79,6 @@ class MedicamentoService:
         if estoque_minimo < 0:
             raise ValidacaoError("A quantidade mínima de estoque não pode ser negativa.")
 
-        # Impedimento de código duplicado
         existente = self.repo.buscar_por_codigo(codigo)
         if existente is not None:
             raise CodigoDuplicadoError(f"Já existe um medicamento cadastrado com o código '{codigo}'.")
@@ -113,9 +100,6 @@ class MedicamentoService:
         return med
 
     def atualizar(self, medicamento_id: int, dados: Dict[str, Any]) -> Medicamento:
-        """
-        RF03: Atualiza dados de um medicamento existente no arquivo.
-        """
         med = self.repo.buscar_por_id(medicamento_id)
         if med is None:
             raise MedicamentoNaoEncontradoError(f"Medicamento de ID {medicamento_id} não encontrado.")
@@ -169,9 +153,6 @@ class MedicamentoService:
         return med
 
     def excluir(self, medicamento_id: int) -> bool:
-        """
-        RF04: Exclui medicamento do arquivo, impedindo a exclusão se houver histórico de vendas.
-        """
         med = self.repo.buscar_por_id(medicamento_id)
         if med is None:
             raise MedicamentoNaoEncontradoError(f"Medicamento de ID {medicamento_id} não encontrado.")
@@ -185,32 +166,26 @@ class MedicamentoService:
         return self.repo.excluir(medicamento_id)
 
     def buscar_por_id(self, medicamento_id: int) -> Medicamento:
-        """RF02: Consulta medicamento por identificador."""
         med = self.repo.buscar_por_id(medicamento_id)
         if med is None:
             raise MedicamentoNaoEncontradoError(f"Medicamento de ID {medicamento_id} não encontrado.")
         return med
 
     def buscar_por_codigo(self, codigo: str) -> Medicamento:
-        """RF02: Consulta medicamento por código único."""
         med = self.repo.buscar_por_codigo(codigo)
         if med is None:
             raise MedicamentoNaoEncontradoError(f"Medicamento de código '{codigo}' não encontrado.")
         return med
 
     def pesquisar_por_nome(self, termo: str) -> List[Medicamento]:
-        """RF02: Pesquisa medicamentos por nome (case-insensitive)."""
         if not termo or not termo.strip():
             return self.listar_todos()
         return self.repo.buscar_por_nome(termo.strip())
 
     def listar_todos(self) -> List[Medicamento]:
-        """RF02: Consulta todos os medicamentos cadastrados."""
         return self.repo.listar_todos()
 
     def listar_por_categoria(self, categoria: str) -> List[Medicamento]:
-        """RF02: Consulta medicamentos por categoria."""
         if not categoria or not categoria.strip():
             raise ValidacaoError("A categoria deve ser informada.")
         return self.repo.listar_por_categoria(categoria.strip())
-

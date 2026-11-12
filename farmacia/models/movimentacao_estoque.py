@@ -15,13 +15,12 @@ class MovimentacaoEstoque:
         self.id = id
         self.medicamento_id = medicamento_id
         self.medicamento_nome = medicamento_nome
-        self.tipo = tipo.upper()  # 'ENTRADA' ou 'SAIDA'
+        self.tipo = tipo.upper()
         self.quantidade = quantidade
         self.data_movimentacao = data_movimentacao
         self.descricao = descricao
 
     def to_dict(self) -> dict:
-        """Retorna os dados da movimentação em formato de dicionário."""
         return {
             "id": self.id,
             "medicamento_id": self.medicamento_id,
@@ -31,4 +30,3 @@ class MovimentacaoEstoque:
             "data_movimentacao": self.data_movimentacao,
             "descricao": self.descricao,
         }
-
