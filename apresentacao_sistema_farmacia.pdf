@@ -1,0 +1,802 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R 25 0 R 27 0 R] /Count 11 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1280 720] /Resources << /Font << /F_Reg 3 0 R /F_Bold 4 0 R /F_Mono 5 0 R /F_MonoBold 6 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 3514 >>
+stream
+0.070 0.090 0.130 rg 0.00 0.00 1280.00 720.00 re f
+0.200 0.550 0.950 rg 0.00 712.00 1280.00 8.00 re f
+BT /F_Bold 14 Tf 0.600 0.650 0.750 rg 80.00 610.00 Td (UNIVERSIDADE FEDERAL DE ALAGOAS - UFAL) Tj ET
+BT /F_Bold 14 Tf 0.100 0.750 0.650 rg 80.00 588.00 Td (CAMPUS DE ARAPIRACA - CURSO DE SISTEMAS DE INFORMA\307\303O) Tj ET
+BT /F_Reg 13 Tf 0.600 0.650 0.750 rg 80.00 566.00 Td (DISCIPLINA: L\323GICA DE PROGRAMA\307\303O / ENGENHARIA DE SOFTWARE) Tj ET
+0.220 0.280 0.380 RG 1.50 w 80.00 545.00 m 1200.00 545.00 l S
+BT /F_Bold 44 Tf 0.980 0.980 0.980 rg 80.00 465.00 Td (Sistema de Gerenciamento de Farm\341cia) Tj ET
+BT /F_Bold 22 Tf 0.200 0.550 0.950 rg 80.00 415.00 Td (Drogaria Vida & Sa\372de: PDV, Controle de Estoque e Persist\352ncia) Tj ET
+BT /F_Reg 16 Tf 0.850 0.880 0.920 rg 80.00 360.00 Td (Apresenta\347\343o Final do Projeto Pr\341tico de Programa\347\343o Estruturada) Tj ET
+BT /F_Reg 16 Tf 0.850 0.880 0.920 rg 80.00 335.00 Td (Desenvolvimento orientado a Requisitos, Casos de Uso, MVP e Princ\355pios SOLID) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 90.00 90.00 m 590.00 90.00 l 595.52 90.00 600.00 94.48 600.00 100.00 c 600.00 270.00 l 600.00 275.52 595.52 280.00 590.00 280.00 c 90.00 280.00 l 84.48 280.00 80.00 275.52 80.00 270.00 c 80.00 100.00 l 80.00 94.48 84.48 90.00 90.00 90.00 c h B
+BT /F_Bold 13 Tf 0.100 0.750 0.650 rg 105.00 245.00 Td (EQUIPE E ORIENTA\307\303O:) Tj ET
+BT /F_Bold 13 Tf 0.600 0.650 0.750 rg 105.00 210.00 Td (Aluno / Desenvolvedor:) Tj ET
+BT /F_Bold 14 Tf 0.980 0.980 0.980 rg 285.00 210.00 Td (Kawe Firmino) Tj ET
+BT /F_Bold 13 Tf 0.600 0.650 0.750 rg 105.00 178.00 Td (Professor / Avaliador:) Tj ET
+BT /F_Bold 14 Tf 0.980 0.980 0.980 rg 285.00 178.00 Td (Prof. Maur\355cio) Tj ET
+BT /F_Bold 13 Tf 0.600 0.650 0.750 rg 105.00 146.00 Td (Per\355odo Letivo:) Tj ET
+BT /F_Reg 13 Tf 0.980 0.980 0.980 rg 285.00 146.00 Td (2\272 Per\355odo - Sistemas de Informa\347\343o) Tj ET
+BT /F_Bold 13 Tf 0.600 0.650 0.750 rg 105.00 114.00 Td (Local / Ano:) Tj ET
+BT /F_Reg 13 Tf 0.980 0.980 0.980 rg 285.00 114.00 Td (Arapiraca - AL - 2026) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 640.00 90.00 m 1190.00 90.00 l 1195.52 90.00 1200.00 94.48 1200.00 100.00 c 1200.00 270.00 l 1200.00 275.52 1195.52 280.00 1190.00 280.00 c 640.00 280.00 l 634.48 280.00 630.00 275.52 630.00 270.00 c 630.00 100.00 l 630.00 94.48 634.48 90.00 640.00 90.00 c h B
+BT /F_Bold 13 Tf 0.200 0.550 0.950 rg 655.00 245.00 Td (ESTRUTURA DE AVALIA\307\303O DA APRESENTA\307\303O \(10~15 MIN\):) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 655.00 212.00 Td (1.) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 675.00 212.00 Td (Demandas encontradas no estabelecimento e objetivos tra\347ados) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 655.00 188.00 Td (2.) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 675.00 188.00 Td (Requisitos desenvolvidos \(Funcionais e N\343o Funcionais - Valente Cap. 3\)) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 655.00 164.00 Td (3.) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 675.00 164.00 Td (O que foi atendido pelo software \(MVP e escopo\)) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 655.00 140.00 Td (4.) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 675.00 140.00 Td (Quais e onde foram utilizadas as 7 estruturas obrigat\363rias no c\363digo) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 655.00 116.00 Td (5.) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 675.00 116.00 Td (Cronograma de atividades semanais e demonstra\347\343o ao vivo no terminal) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1280 720] /Resources << /Font << /F_Reg 3 0 R /F_Bold 4 0 R /F_Mono 5 0 R /F_MonoBold 6 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 4272 >>
+stream
+0.070 0.090 0.130 rg 0.00 0.00 1280.00 720.00 re f
+0.080 0.100 0.150 rg 0.00 660.00 1280.00 60.00 re f
+0.200 0.250 0.350 RG 1.20 w 0.00 660.00 m 1280.00 660.00 l S
+BT /F_Bold 11 Tf 0.550 0.650 0.800 rg 60.00 684.00 Td (UFAL - Bacharelado em Sistemas de Informa\347\343o) Tj ET
+BT /F_Bold 13 Tf 1.000 1.000 1.000 rg 380.00 684.00 Td (02. Fundamenta\347\343o Te\363rica: Engenharia de Requisitos) Tj ET
+BT /F_Reg 11 Tf 0.600 0.700 0.850 rg 990.00 684.00 Td (Kawe Firmino - Slide 2/11) Tj ET
+BT /F_Bold 26 Tf 0.980 0.980 0.980 rg 60.00 615.00 Td (A Import\342ncia dos Requisitos Segundo a Literatura T\351cnica) Tj ET
+BT /F_Reg 13 Tf 0.600 0.650 0.750 rg 60.00 590.00 Td (Refer\352ncia: VALENTE, Marco Tulio. Engenharia de Software Moderna. Belo Horizonte, 2020. Cap\355tulo 3.) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 68.00 430.00 m 1212.00 430.00 l 1216.42 430.00 1220.00 433.58 1220.00 438.00 c 1220.00 552.00 l 1220.00 556.42 1216.42 560.00 1212.00 560.00 c 68.00 560.00 l 63.58 560.00 60.00 556.42 60.00 552.00 c 60.00 438.00 l 60.00 433.58 63.58 430.00 68.00 430.00 c h B
+0.080 0.200 0.350 rg 84.00 521.00 m 216.00 521.00 l 218.21 521.00 220.00 522.79 220.00 525.00 c 220.00 541.00 l 220.00 543.21 218.21 545.00 216.00 545.00 c 84.00 545.00 l 81.79 545.00 80.00 543.21 80.00 541.00 c 80.00 525.00 l 80.00 522.79 81.79 521.00 84.00 521.00 c h f
+BT /F_Bold 10 Tf 0.200 0.550 0.950 rg 92.00 529.00 Td (VALENTE \(2020, p. 84\)) Tj ET
+BT /F_Bold 15 Tf 0.980 0.980 0.980 rg 80.00 498.00 Td ("A defini\347\343o dos requisitos \351 uma etapa crucial da constru\347\343o de qualquer sistema de software.) Tj ET
+BT /F_Bold 15 Tf 0.980 0.980 0.980 rg 80.00 474.00 Td (De nada adianta ter um sistema com o melhor design, implementado na mais moderna linguagem,) Tj ET
+BT /F_Bold 15 Tf 0.100 0.750 0.650 rg 80.00 450.00 Td (usando o melhor processo de desenvolvimento, com alta cobertura de testes e ele n\343o atender \340s necessidades de seus usu\341rios.") Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 68.00 295.00 m 1212.00 295.00 l 1216.42 295.00 1220.00 298.58 1220.00 303.00 c 1220.00 402.00 l 1220.00 406.42 1216.42 410.00 1212.00 410.00 c 68.00 410.00 l 63.58 410.00 60.00 406.42 60.00 402.00 c 60.00 303.00 l 60.00 298.58 63.58 295.00 68.00 295.00 c h B
+0.080 0.200 0.350 rg 84.00 371.00 m 216.00 371.00 l 218.21 371.00 220.00 372.79 220.00 375.00 c 220.00 391.00 l 220.00 393.21 218.21 395.00 216.00 395.00 c 84.00 395.00 l 81.79 395.00 80.00 393.21 80.00 391.00 c 80.00 375.00 l 80.00 372.79 81.79 371.00 84.00 371.00 c h f
+BT /F_Bold 10 Tf 0.200 0.550 0.950 rg 92.00 379.00 Td (VALENTE \(2020, p. 89\)) Tj ET
+BT /F_Bold 17 Tf 0.980 0.980 0.980 rg 80.00 348.00 Td ("Requisitos s\343o a 'ponte' que liga um problema do mundo real) Tj ET
+BT /F_Bold 17 Tf 0.100 0.750 0.650 rg 80.00 322.00 Td (a um sistema de software que o soluciona.") Tj ET
+0.090 0.110 0.160 rg 0.100 0.750 0.650 RG 1.50 w 68.00 40.00 m 1212.00 40.00 l 1216.42 40.00 1220.00 43.58 1220.00 48.00 c 1220.00 267.00 l 1220.00 271.42 1216.42 275.00 1212.00 275.00 c 68.00 275.00 l 63.58 275.00 60.00 271.42 60.00 267.00 c 60.00 48.00 l 60.00 43.58 63.58 40.00 68.00 40.00 c h B
+BT /F_Bold 13 Tf 0.100 0.750 0.650 rg 85.00 245.00 Td (COMO ESSA BASE TE\323RICA FOI APLICADA NO PROJETO DA FARM\301CIA:) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 85.00 215.00 Td (1. Compreens\343o do Dom\355nio:) Tj ET
+BT /F_Reg 13 Tf 0.850 0.880 0.920 rg 320.00 215.00 Td (Mapeamento pr\351vio da rotina de balc\343o e regras de lote antes de escrever c\363digo.) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 85.00 179.00 Td (2. Requisitos como Ponte:) Tj ET
+BT /F_Reg 13 Tf 0.850 0.880 0.920 rg 320.00 179.00 Td (Especifica\347\343o de RFs e RNFs garantindo integridade de estoque e agilidade no caixa.) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 85.00 143.00 Td (3. Hist\363rias de Usu\341rio:) Tj ET
+BT /F_Reg 13 Tf 0.850 0.880 0.920 rg 320.00 143.00 Td (Necessidades modeladas no padr\343o INVEST \(Cart\343o, Conversa e Confirma\347\343o/DoD\).) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 85.00 107.00 Td (4. Entrega de Valor \(MVP\):) Tj ET
+BT /F_Reg 13 Tf 0.850 0.880 0.920 rg 320.00 107.00 Td (Foco no n\372cleo de valor imediato \(PDV + Estoque + CSV\) sem complexidades prematuras.) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1280 720] /Resources << /Font << /F_Reg 3 0 R /F_Bold 4 0 R /F_Mono 5 0 R /F_MonoBold 6 0 R >> >> /Contents 12 0 R >>
+endobj
+12 0 obj
+<< /Length 7703 >>
+stream
+0.070 0.090 0.130 rg 0.00 0.00 1280.00 720.00 re f
+0.080 0.100 0.150 rg 0.00 660.00 1280.00 60.00 re f
+0.200 0.250 0.350 RG 1.20 w 0.00 660.00 m 1280.00 660.00 l S
+BT /F_Bold 11 Tf 0.550 0.650 0.800 rg 60.00 684.00 Td (UFAL - Bacharelado em Sistemas de Informa\347\343o) Tj ET
+BT /F_Bold 13 Tf 1.000 1.000 1.000 rg 380.00 684.00 Td (03. Demandas Encontradas no Estabelecimento) Tj ET
+BT /F_Reg 11 Tf 0.600 0.700 0.850 rg 990.00 684.00 Td (Kawe Firmino - Slide 3/11) Tj ET
+0.110 0.140 0.220 rg 0.220 0.300 0.450 RG 1.00 w 66.00 617.00 m 1214.00 617.00 l 1217.31 617.00 1220.00 619.69 1220.00 623.00 c 1220.00 639.00 l 1220.00 642.31 1217.31 645.00 1214.00 645.00 c 66.00 645.00 l 62.69 645.00 60.00 642.31 60.00 639.00 c 60.00 623.00 l 60.00 619.69 62.69 617.00 66.00 617.00 c h B
+BT /F_Bold 11 Tf 0.200 0.750 0.950 rg 75.00 626.00 Td (Pergunta do Roteiro: "Quais foram as demandas encontradas no estabelecimento para o projeto?") Tj ET
+BT /F_Bold 24 Tf 0.980 0.980 0.980 rg 60.00 590.00 Td (Cen\341rio Operacional Observado na Farm\341cia de Balc\343o) Tj ET
+BT /F_Reg 14 Tf 0.600 0.650 0.750 rg 60.00 565.00 Td (Identifica\347\343o dos problemas reais de rotina que justificaram a constru\347\343o do sistema:) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 68.00 45.00 m 412.00 45.00 l 416.42 45.00 420.00 48.58 420.00 53.00 c 420.00 527.00 l 420.00 531.42 416.42 535.00 412.00 535.00 c 68.00 535.00 l 63.58 535.00 60.00 531.42 60.00 527.00 c 60.00 53.00 l 60.00 48.58 63.58 45.00 68.00 45.00 c h B
+0.080 0.120 0.200 rg 84.00 489.00 m 396.00 489.00 l 398.21 489.00 400.00 490.79 400.00 493.00 c 400.00 511.00 l 400.00 513.21 398.21 515.00 396.00 515.00 c 84.00 515.00 l 81.79 515.00 80.00 513.21 80.00 511.00 c 80.00 493.00 l 80.00 490.79 81.79 489.00 84.00 489.00 c h f
+BT /F_Bold 10 Tf 0.850 0.350 0.350 rg 90.00 498.00 Td (DEMANDA 1: CONTROLE MANUAL) Tj ET
+BT /F_Bold 16 Tf 0.980 0.980 0.980 rg 80.00 460.00 Td (Cadernos, Fichas e Rasuras) Tj ET
+0.220 0.280 0.380 RG 1.00 w 80.00 440.00 m 400.00 440.00 l S
+BT /F_Bold 13 Tf 0.850 0.350 0.350 rg 82.00 410.00 Td (-) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 95.00 410.00 Td (Registro de entrada e sa\355da) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 95.00 392.00 Td (feito em cadernos de papel) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 95.00 374.00 Td (sujeitos a rasuras e extravios;) Tj ET
+BT /F_Bold 13 Tf 0.850 0.350 0.350 rg 82.00 348.00 Td (-) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 95.00 348.00 Td (Anota\347\365es ileg\355veis dificultando a identifica\347\343o) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 95.00 330.00 Td (exata de medicamentos e apresenta\347\365es;) Tj ET
+BT /F_Bold 13 Tf 0.850 0.350 0.350 rg 82.00 304.00 Td (-) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 95.00 304.00 Td (Falta total de rastreabilidade sobre) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 95.00 286.00 Td (qual funcion\341rio realizou reposi\347\365es ou) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 95.00 268.00 Td (altera\347\365es;) Tj ET
+BT /F_Bold 13 Tf 0.850 0.350 0.350 rg 82.00 242.00 Td (-) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 95.00 242.00 Td (Hist\363rico inexistente para consulta r\341pida) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 95.00 224.00 Td (de compras anteriores de clientes) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 95.00 206.00 Td (recorrentes.) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 468.00 45.00 m 812.00 45.00 l 816.42 45.00 820.00 48.58 820.00 53.00 c 820.00 527.00 l 820.00 531.42 816.42 535.00 812.00 535.00 c 468.00 535.00 l 463.58 535.00 460.00 531.42 460.00 527.00 c 460.00 53.00 l 460.00 48.58 463.58 45.00 468.00 45.00 c h B
+0.080 0.120 0.200 rg 484.00 489.00 m 796.00 489.00 l 798.21 489.00 800.00 490.79 800.00 493.00 c 800.00 511.00 l 800.00 513.21 798.21 515.00 796.00 515.00 c 484.00 515.00 l 481.79 515.00 480.00 513.21 480.00 511.00 c 480.00 493.00 l 480.00 490.79 481.79 489.00 484.00 489.00 c h f
+BT /F_Bold 10 Tf 0.100 0.750 0.650 rg 490.00 498.00 Td (DEMANDA 2: GARGALO NO CAIXA) Tj ET
+BT /F_Bold 16 Tf 0.980 0.980 0.980 rg 480.00 460.00 Td (Lentid\343o no Balc\343o e Erros de Soma) Tj ET
+0.220 0.280 0.380 RG 1.00 w 480.00 440.00 m 800.00 440.00 l S
+BT /F_Bold 13 Tf 0.100 0.750 0.650 rg 482.00 410.00 Td (-) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 495.00 410.00 Td (Atendente precisava consultar pre\347os manualmente) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 495.00 392.00 Td (em tabelas impressas;) Tj ET
+BT /F_Bold 13 Tf 0.100 0.750 0.650 rg 482.00 366.00 Td (-) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 495.00 366.00 Td (C\341lculo de subtotais e trocos) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 495.00 348.00 Td (feito manualmente na calculadora, gerando) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 495.00 330.00 Td (erros;) Tj ET
+BT /F_Bold 13 Tf 0.100 0.750 0.650 rg 482.00 304.00 Td (-) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 495.00 304.00 Td (Forma\347\343o de filas em hor\341rios) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 495.00 286.00 Td (de pico devido \340 demora) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 495.00 268.00 Td (no fechamento de cada venda;) Tj ET
+BT /F_Bold 13 Tf 0.100 0.750 0.650 rg 482.00 242.00 Td (-) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 495.00 242.00 Td (Conflito de confer\352ncia no fechamento) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 495.00 224.00 Td (di\341rio do caixa por inconsist\352ncias) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 495.00 206.00 Td (manuais.) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 868.00 45.00 m 1212.00 45.00 l 1216.42 45.00 1220.00 48.58 1220.00 53.00 c 1220.00 527.00 l 1220.00 531.42 1216.42 535.00 1212.00 535.00 c 868.00 535.00 l 863.58 535.00 860.00 531.42 860.00 527.00 c 860.00 53.00 l 860.00 48.58 863.58 45.00 868.00 45.00 c h B
+0.080 0.120 0.200 rg 884.00 489.00 m 1196.00 489.00 l 1198.21 489.00 1200.00 490.79 1200.00 493.00 c 1200.00 511.00 l 1200.00 513.21 1198.21 515.00 1196.00 515.00 c 884.00 515.00 l 881.79 515.00 880.00 513.21 880.00 511.00 c 880.00 493.00 l 880.00 490.79 881.79 489.00 884.00 489.00 c h f
+BT /F_Bold 10 Tf 0.200 0.550 0.950 rg 890.00 498.00 Td (DEMANDA 3: RUPTURA E VENCIMENTO) Tj ET
+BT /F_Bold 16 Tf 0.980 0.980 0.980 rg 880.00 460.00 Td (Descontrole de Estoque e Validade) Tj ET
+0.220 0.280 0.380 RG 1.00 w 880.00 440.00 m 1200.00 440.00 l S
+BT /F_Bold 13 Tf 0.200 0.550 0.950 rg 882.00 410.00 Td (-) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 895.00 410.00 Td (Inexist\352ncia de alerta preventivo quando) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 895.00 392.00 Td (o estoque atinge o n\355vel) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 895.00 374.00 Td (m\355nimo de seguran\347a;) Tj ET
+BT /F_Bold 13 Tf 0.200 0.550 0.950 rg 882.00 348.00 Td (-) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 895.00 348.00 Td (Medicamentos essenciais esgotavam no estoque) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 895.00 330.00 Td (f\355sico sem a equipe perceber) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 895.00 312.00 Td (a tempo;) Tj ET
+BT /F_Bold 13 Tf 0.200 0.550 0.950 rg 882.00 286.00 Td (-) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 895.00 286.00 Td (Perda financeira e risco sanit\341rio) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 895.00 268.00 Td (por rem\351dios que passavam da) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 895.00 250.00 Td (data de validade na prateleira;) Tj ET
+BT /F_Bold 13 Tf 0.200 0.550 0.950 rg 882.00 224.00 Td (-) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 895.00 224.00 Td (Falta de relat\363rios estruturados para) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 895.00 206.00 Td (envio de pedidos programados \340s) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 895.00 188.00 Td (distribuidoras.) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1280 720] /Resources << /Font << /F_Reg 3 0 R /F_Bold 4 0 R /F_Mono 5 0 R /F_MonoBold 6 0 R >> >> /Contents 14 0 R >>
+endobj
+14 0 obj
+<< /Length 5825 >>
+stream
+0.070 0.090 0.130 rg 0.00 0.00 1280.00 720.00 re f
+0.080 0.100 0.150 rg 0.00 660.00 1280.00 60.00 re f
+0.200 0.250 0.350 RG 1.20 w 0.00 660.00 m 1280.00 660.00 l S
+BT /F_Bold 11 Tf 0.550 0.650 0.800 rg 60.00 684.00 Td (UFAL - Bacharelado em Sistemas de Informa\347\343o) Tj ET
+BT /F_Bold 13 Tf 1.000 1.000 1.000 rg 380.00 684.00 Td (04. Objetivos Tra\347ados para o Projeto) Tj ET
+BT /F_Reg 11 Tf 0.600 0.700 0.850 rg 990.00 684.00 Td (Kawe Firmino - Slide 4/11) Tj ET
+0.110 0.140 0.220 rg 0.220 0.300 0.450 RG 1.00 w 66.00 617.00 m 1214.00 617.00 l 1217.31 617.00 1220.00 619.69 1220.00 623.00 c 1220.00 639.00 l 1220.00 642.31 1217.31 645.00 1214.00 645.00 c 66.00 645.00 l 62.69 645.00 60.00 642.31 60.00 639.00 c 60.00 623.00 l 60.00 619.69 62.69 617.00 66.00 617.00 c h B
+BT /F_Bold 11 Tf 0.200 0.750 0.950 rg 75.00 626.00 Td (Pergunta do Roteiro: "Quais foram os objetivos tra\347ados para o seu projeto?") Tj ET
+BT /F_Bold 24 Tf 0.980 0.980 0.980 rg 60.00 590.00 Td (Objetivo Geral e Objetivos Espec\355ficos do Sistema) Tj ET
+BT /F_Reg 14 Tf 0.600 0.650 0.750 rg 60.00 565.00 Td (Metas claras alinhadas para sanar as demandas operacionais identificadas:) Tj ET
+0.110 0.140 0.200 rg 0.100 0.750 0.650 RG 1.50 w 68.00 455.00 m 1212.00 455.00 l 1216.42 455.00 1220.00 458.58 1220.00 463.00 c 1220.00 532.00 l 1220.00 536.42 1216.42 540.00 1212.00 540.00 c 68.00 540.00 l 63.58 540.00 60.00 536.42 60.00 532.00 c 60.00 463.00 l 60.00 458.58 63.58 455.00 68.00 455.00 c h B
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 85.00 512.00 Td (OBJETIVO GERAL:) Tj ET
+BT /F_Bold 15 Tf 0.980 0.980 0.980 rg 85.00 485.00 Td (Desenvolver um sistema modular em Python com interface de terminal \(CLI\) e banco SQLite, capaz de) Tj ET
+BT /F_Bold 15 Tf 0.980 0.980 0.980 rg 85.00 465.00 Td (automatizar as opera\347\365es de balc\343o \(PDV\), garantir 100% de consist\352ncia no estoque e exportar relat\363rios f\355sicos em CSV.) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 68.00 310.00 m 1212.00 310.00 l 1216.42 310.00 1220.00 313.58 1220.00 318.00 c 1220.00 427.00 l 1220.00 431.42 1216.42 435.00 1212.00 435.00 c 68.00 435.00 l 63.58 435.00 60.00 431.42 60.00 427.00 c 60.00 318.00 l 60.00 313.58 63.58 310.00 68.00 310.00 c h B
+0.080 0.160 0.280 rg 84.00 398.00 m 246.00 398.00 l 248.21 398.00 250.00 399.79 250.00 402.00 c 250.00 416.00 l 250.00 418.21 248.21 420.00 246.00 420.00 c 84.00 420.00 l 81.79 420.00 80.00 418.21 80.00 416.00 c 80.00 402.00 l 80.00 399.79 81.79 398.00 84.00 398.00 c h f
+BT /F_Bold 10 Tf 0.200 0.550 0.950 rg 92.00 405.00 Td (OBJETIVO ESPEC\315FICO 1) Tj ET
+BT /F_Bold 15 Tf 0.980 0.980 0.980 rg 265.00 405.00 Td (Automatizar o Ponto de Venda \(PDV\) e Atendimento R\341pido) Tj ET
+0.220 0.280 0.380 RG 1.00 w 80.00 387.00 m 1200.00 387.00 l S
+BT /F_Reg 13 Tf 0.850 0.880 0.920 rg 80.00 363.00 Td (Permitir que o operador localize medicamentos por c\363digo ou nome parcial em menos de 1 segundo, adicione m\372ltiplos itens ao carrinho din\342mico e conclua a venda com c\341lculo exato de subtotais e totais.) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 80.00 337.00 Td (- Meta pr\341tica: Reduzir o tempo m\351dio de atendimento de 3 minutos para menos de 30 segundos por cliente.) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 68.00 170.00 m 1212.00 170.00 l 1216.42 170.00 1220.00 173.58 1220.00 178.00 c 1220.00 287.00 l 1220.00 291.42 1216.42 295.00 1212.00 295.00 c 68.00 295.00 l 63.58 295.00 60.00 291.42 60.00 287.00 c 60.00 178.00 l 60.00 173.58 63.58 170.00 68.00 170.00 c h B
+0.080 0.160 0.280 rg 84.00 258.00 m 246.00 258.00 l 248.21 258.00 250.00 259.79 250.00 262.00 c 250.00 276.00 l 250.00 278.21 248.21 280.00 246.00 280.00 c 84.00 280.00 l 81.79 280.00 80.00 278.21 80.00 276.00 c 80.00 262.00 l 80.00 259.79 81.79 258.00 84.00 258.00 c h f
+BT /F_Bold 10 Tf 0.200 0.550 0.950 rg 92.00 265.00 Td (OBJETIVO ESPEC\315FICO 2) Tj ET
+BT /F_Bold 15 Tf 0.980 0.980 0.980 rg 265.00 265.00 Td (Garantir Integridade e Bloqueio de Estoque Insuficiente) Tj ET
+0.220 0.280 0.380 RG 1.00 w 80.00 247.00 m 1200.00 247.00 l S
+BT /F_Reg 13 Tf 0.850 0.880 0.920 rg 80.00 223.00 Td (Implementar transa\347\365es at\364micas no padr\343o Unit of Work com SQLite: caso qualquer item da compra n\343o possua saldo em estoque, a venda inteira \351 abortada \(princ\355pio 'Tudo ou Nada'\).) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 80.00 197.00 Td (- Meta pr\341tica: Eliminar 100% das diverg\352ncias entre o estoque f\355sico e o estoque registrado no sistema.) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 68.00 30.00 m 1212.00 30.00 l 1216.42 30.00 1220.00 33.58 1220.00 38.00 c 1220.00 147.00 l 1220.00 151.42 1216.42 155.00 1212.00 155.00 c 68.00 155.00 l 63.58 155.00 60.00 151.42 60.00 147.00 c 60.00 38.00 l 60.00 33.58 63.58 30.00 68.00 30.00 c h B
+0.080 0.160 0.280 rg 84.00 118.00 m 246.00 118.00 l 248.21 118.00 250.00 119.79 250.00 122.00 c 250.00 136.00 l 250.00 138.21 248.21 140.00 246.00 140.00 c 84.00 140.00 l 81.79 140.00 80.00 138.21 80.00 136.00 c 80.00 122.00 l 80.00 119.79 81.79 118.00 84.00 118.00 c h f
+BT /F_Bold 10 Tf 0.200 0.550 0.950 rg 92.00 125.00 Td (OBJETIVO ESPEC\315FICO 3) Tj ET
+BT /F_Bold 15 Tf 0.980 0.980 0.980 rg 265.00 125.00 Td (Prover Gest\343o de Validade, Alertas e Exporta\347\343o em Planilhas CSV) Tj ET
+0.220 0.280 0.380 RG 1.00 w 80.00 107.00 m 1200.00 107.00 l S
+BT /F_Reg 13 Tf 0.850 0.880 0.920 rg 80.00 83.00 Td (Fornecer ao farmac\352utico listagens instant\342neas de medicamentos em estoque cr\355tico \(<= m\355nimo\) e com validade pr\363xima, al\351m de exportador f\355sico para arquivos .csv codificados em UTF-8 com separador ';'.) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 80.00 57.00 Td (- Meta pr\341tica: Permitir planejamento de compras antecipado e confer\352ncia financeira no Excel/LibreOffice.) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1280 720] /Resources << /Font << /F_Reg 3 0 R /F_Bold 4 0 R /F_Mono 5 0 R /F_MonoBold 6 0 R >> >> /Contents 16 0 R >>
+endobj
+16 0 obj
+<< /Length 7193 >>
+stream
+0.070 0.090 0.130 rg 0.00 0.00 1280.00 720.00 re f
+0.080 0.100 0.150 rg 0.00 660.00 1280.00 60.00 re f
+0.200 0.250 0.350 RG 1.20 w 0.00 660.00 m 1280.00 660.00 l S
+BT /F_Bold 11 Tf 0.550 0.650 0.800 rg 60.00 684.00 Td (UFAL - Bacharelado em Sistemas de Informa\347\343o) Tj ET
+BT /F_Bold 13 Tf 1.000 1.000 1.000 rg 380.00 684.00 Td (05. Requisitos Desenvolvidos \(RFs e RNFs\)) Tj ET
+BT /F_Reg 11 Tf 0.600 0.700 0.850 rg 990.00 684.00 Td (Kawe Firmino - Slide 5/11) Tj ET
+0.110 0.140 0.220 rg 0.220 0.300 0.450 RG 1.00 w 66.00 617.00 m 1214.00 617.00 l 1217.31 617.00 1220.00 619.69 1220.00 623.00 c 1220.00 639.00 l 1220.00 642.31 1217.31 645.00 1214.00 645.00 c 66.00 645.00 l 62.69 645.00 60.00 642.31 60.00 639.00 c 60.00 623.00 l 60.00 619.69 62.69 617.00 66.00 617.00 c h B
+BT /F_Bold 11 Tf 0.200 0.750 0.950 rg 75.00 626.00 Td (Pergunta do Roteiro: "Quais os requisitos desenvolvidos para o seu projeto?") Tj ET
+BT /F_Bold 24 Tf 0.980 0.980 0.980 rg 60.00 590.00 Td (Requisitos Funcionais \(O que o sistema faz\) e N\343o Funcionais \(Como faz\)) Tj ET
+BT /F_Reg 14 Tf 0.600 0.650 0.750 rg 60.00 565.00 Td (Especifica\347\343o t\351cnica fundamentada no Cap\355tulo 3 do Valente \(p. 90-93\):) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 68.00 45.00 m 612.00 45.00 l 616.42 45.00 620.00 48.58 620.00 53.00 c 620.00 527.00 l 620.00 531.42 616.42 535.00 612.00 535.00 c 68.00 535.00 l 63.58 535.00 60.00 531.42 60.00 527.00 c 60.00 53.00 l 60.00 48.58 63.58 45.00 68.00 45.00 c h B
+0.080 0.220 0.200 rg 84.00 494.00 m 316.00 494.00 l 318.21 494.00 320.00 495.79 320.00 498.00 c 320.00 516.00 l 320.00 518.21 318.21 520.00 316.00 520.00 c 84.00 520.00 l 81.79 520.00 80.00 518.21 80.00 516.00 c 80.00 498.00 l 80.00 495.79 81.79 494.00 84.00 494.00 c h f
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 95.00 502.00 Td (REQUISITOS FUNCIONAIS \(RF\)) Tj ET
+BT /F_Bold 12 Tf 0.980 0.980 0.980 rg 80.00 475.00 Td (RF01 - Cat\341logo de Medicamentos:) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 80.00 459.00 Td (Cadastrar, atualizar dados, listar e pesquisar medicamentos por) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 80.00 445.00 Td (nome ou c\363digo \372nico.) Tj ET
+BT /F_Bold 12 Tf 0.980 0.980 0.980 rg 80.00 425.00 Td (RF02 - Ponto de Venda \(PDV\):) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 80.00 409.00 Td (Adicionar medicamentos sequencialmente ao carrinho din\342mico com subtotal) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 80.00 395.00 Td (e cliente opcional.) Tj ET
+BT /F_Bold 12 Tf 0.980 0.980 0.980 rg 80.00 375.00 Td (RF03 - Baixa At\364mica de Estoque:) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 80.00 359.00 Td (Decrementar a quantidade f\355sica vendida diretamente no banco) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 80.00 345.00 Td (na confirma\347\343o da venda.) Tj ET
+BT /F_Bold 12 Tf 0.980 0.980 0.980 rg 80.00 325.00 Td (RF04 - Bloqueio de Estoque Insuficiente:) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 80.00 309.00 Td (Impedir a finaliza\347\343o da compra caso a quantidade) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 80.00 295.00 Td (pedida supere o estoque dispon\355vel.) Tj ET
+BT /F_Bold 12 Tf 0.980 0.980 0.980 rg 80.00 275.00 Td (RF05 - Entrada de Lotes \(Reposi\347\343o\):) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 80.00 259.00 Td (Registrar reposi\347\365es no estoque com quantidade positiva, data/hora) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 80.00 245.00 Td (e motivo da entrada.) Tj ET
+BT /F_Bold 12 Tf 0.980 0.980 0.980 rg 80.00 225.00 Td (RF06 - Alertas de Validade e Estoque M\355nimo:) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 80.00 209.00 Td (Filtrar e exibir medicamentos com estoque <= estoque_minimo) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 80.00 195.00 Td (ou prazo de validade cr\355tico.) Tj ET
+BT /F_Bold 12 Tf 0.980 0.980 0.980 rg 80.00 175.00 Td (RF07 - Exporta\347\343o de Relat\363rios CSV:) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 80.00 159.00 Td (Gerar arquivos f\355sicos .csv tabulados na pasta reports/) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 80.00 145.00 Td (para an\341lise gerencial externa.) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 668.00 45.00 m 1212.00 45.00 l 1216.42 45.00 1220.00 48.58 1220.00 53.00 c 1220.00 527.00 l 1220.00 531.42 1216.42 535.00 1212.00 535.00 c 668.00 535.00 l 663.58 535.00 660.00 531.42 660.00 527.00 c 660.00 53.00 l 660.00 48.58 663.58 45.00 668.00 45.00 c h B
+0.080 0.180 0.320 rg 684.00 494.00 m 946.00 494.00 l 948.21 494.00 950.00 495.79 950.00 498.00 c 950.00 516.00 l 950.00 518.21 948.21 520.00 946.00 520.00 c 684.00 520.00 l 681.79 520.00 680.00 518.21 680.00 516.00 c 680.00 498.00 l 680.00 495.79 681.79 494.00 684.00 494.00 c h f
+BT /F_Bold 12 Tf 0.200 0.550 0.950 rg 695.00 502.00 Td (REQUISITOS N\303O FUNCIONAIS \(RNF\)) Tj ET
+BT /F_Bold 12 Tf 0.980 0.980 0.980 rg 680.00 475.00 Td (RNF01 - Banco de Dados Relacional \(SQLite\):) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 680.00 459.00 Td (Persist\352ncia em banco relacional local \(data/farmacia.db\) com Prepared) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 680.00 445.00 Td (Statements \(?\) contra injection.) Tj ET
+BT /F_Bold 12 Tf 0.980 0.980 0.980 rg 680.00 425.00 Td (RNF02 - Integridade Referencial Ativa:) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 680.00 409.00 Td (Chaves estrangeiras \(PRAGMA foreign_keys = ON\) assegurando que) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 680.00 395.00 Td (vendas e itens dependam de entidades v\341lidas.) Tj ET
+BT /F_Bold 12 Tf 0.980 0.980 0.980 rg 680.00 375.00 Td (RNF03 - Consist\352ncia Transacional \(UoW\):) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 680.00 359.00 Td (Padr\343o Unit of Work garantindo transa\347\365es at\364micas com) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 680.00 345.00 Td (commit\(\) e rollback\(\) seguro em caso de falha.) Tj ET
+BT /F_Bold 12 Tf 0.980 0.980 0.980 rg 680.00 325.00 Td (RNF04 - Precis\343o Monet\341ria em Centavos:) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 680.00 309.00 Td (Armazenamento de moeda em inteiros \(preco_centavos\) evitando discrep\342ncias) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 680.00 295.00 Td (de ponto flutuante.) Tj ET
+BT /F_Bold 12 Tf 0.980 0.980 0.980 rg 680.00 275.00 Td (RNF05 - Desempenho no Terminal \(< 1s\):) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 680.00 259.00 Td (Tempo de resposta instant\342neo nas pesquisas com cria\347\343o) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 680.00 245.00 Td (de \355ndices nos campos mais consultados.) Tj ET
+BT /F_Bold 12 Tf 0.980 0.980 0.980 rg 680.00 225.00 Td (RNF06 - Arquitetura Desacoplada \(SOLID\):) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 680.00 209.00 Td (Separa\347\343o total entre camadas de Apresenta\347\343o \(CLI\), Dom\355nio) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 680.00 195.00 Td (\(Services\) e Infraestrutura \(Repositories\).) Tj ET
+BT /F_Bold 12 Tf 0.980 0.980 0.980 rg 680.00 175.00 Td (RNF07 - Formata\347\343o Padr\343o de Arquivos CSV:) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 680.00 159.00 Td (Arquivos gerados com encoding UTF-8 \(compat\355vel com acentua\347\343o\)) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 680.00 145.00 Td (e delimitador ponto e v\355rgula \(;\).) Tj ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1280 720] /Resources << /Font << /F_Reg 3 0 R /F_Bold 4 0 R /F_Mono 5 0 R /F_MonoBold 6 0 R >> >> /Contents 18 0 R >>
+endobj
+18 0 obj
+<< /Length 4078 >>
+stream
+0.070 0.090 0.130 rg 0.00 0.00 1280.00 720.00 re f
+0.080 0.100 0.150 rg 0.00 660.00 1280.00 60.00 re f
+0.200 0.250 0.350 RG 1.20 w 0.00 660.00 m 1280.00 660.00 l S
+BT /F_Bold 11 Tf 0.550 0.650 0.800 rg 60.00 684.00 Td (UFAL - Bacharelado em Sistemas de Informa\347\343o) Tj ET
+BT /F_Bold 13 Tf 1.000 1.000 1.000 rg 380.00 684.00 Td (06. Hist\363rias de Usu\341rios \(User Stories - INVEST\)) Tj ET
+BT /F_Reg 11 Tf 0.600 0.700 0.850 rg 990.00 684.00 Td (Kawe Firmino - Slide 6/11) Tj ET
+BT /F_Bold 24 Tf 0.980 0.980 0.980 rg 60.00 590.00 Td (Mapeamento \301gil de Necessidades dos Usu\341rios \(Valente, p. 94-96\)) Tj ET
+BT /F_Reg 14 Tf 0.600 0.650 0.750 rg 60.00 565.00 Td (Formato: Cart\343o \(Card\) + Conversas \(Conversation\) + Confirma\347\343o / Crit\351rios de Aceite \(Confirmation\):) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 68.00 305.00 m 1212.00 305.00 l 1216.42 305.00 1220.00 308.58 1220.00 313.00 c 1220.00 527.00 l 1220.00 531.42 1216.42 535.00 1212.00 535.00 c 68.00 535.00 l 63.58 535.00 60.00 531.42 60.00 527.00 c 60.00 313.00 l 60.00 308.58 63.58 305.00 68.00 305.00 c h B
+0.080 0.180 0.320 rg 84.00 496.00 m 266.00 496.00 l 268.21 496.00 270.00 497.79 270.00 500.00 c 270.00 516.00 l 270.00 518.21 268.21 520.00 266.00 520.00 c 84.00 520.00 l 81.79 520.00 80.00 518.21 80.00 516.00 c 80.00 500.00 l 80.00 497.79 81.79 496.00 84.00 496.00 c h f
+BT /F_Bold 10 Tf 0.200 0.550 0.950 rg 92.00 504.00 Td (US01 - OPERADOR DE CAIXA) Tj ET
+BT /F_Bold 17 Tf 0.980 0.980 0.980 rg 80.00 472.00 Td (Como atendente de balc\343o / operador de caixa,) Tj ET
+BT /F_Reg 15 Tf 0.100 0.750 0.650 rg 80.00 448.00 Td (quero pesquisar medicamentos por nome ou c\363digo e registrar vendas no PDV com c\341lculo autom\341tico,) Tj ET
+BT /F_Reg 15 Tf 0.850 0.880 0.920 rg 80.00 424.00 Td (para agilizar o atendimento, eliminar filas e assegurar que nenhum valor seja calculado errado.) Tj ET
+0.220 0.280 0.380 RG 1.00 w 80.00 400.00 m 1200.00 400.00 l S
+BT /F_Bold 11 Tf 0.600 0.650 0.750 rg 80.00 378.00 Td (CRIT\311RIOS DE ACEITA\307\303O \(CONFIRMA\307\303O / DOD\):) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 80.00 354.00 Td ([+] Busca case-insensitive retornando pre\347o e saldo;) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 480.00 354.00 Td ([+] Recalcular subtotal e total a cada item;) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 860.00 354.00 Td ([+] Bloquear venda se saldo for menor que pedido.) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 68.00 55.00 m 1212.00 55.00 l 1216.42 55.00 1220.00 58.58 1220.00 63.00 c 1220.00 277.00 l 1220.00 281.42 1216.42 285.00 1212.00 285.00 c 68.00 285.00 l 63.58 285.00 60.00 281.42 60.00 277.00 c 60.00 63.00 l 60.00 58.58 63.58 55.00 68.00 55.00 c h B
+0.080 0.220 0.200 rg 84.00 246.00 m 296.00 246.00 l 298.21 246.00 300.00 247.79 300.00 250.00 c 300.00 266.00 l 300.00 268.21 298.21 270.00 296.00 270.00 c 84.00 270.00 l 81.79 270.00 80.00 268.21 80.00 266.00 c 80.00 250.00 l 80.00 247.79 81.79 246.00 84.00 246.00 c h f
+BT /F_Bold 10 Tf 0.100 0.750 0.650 rg 92.00 254.00 Td (US02 - FARMAC\312UTICO / GERENTE) Tj ET
+BT /F_Bold 17 Tf 0.980 0.980 0.980 rg 80.00 222.00 Td (Como farmac\352utico respons\341vel / gerente da farm\341cia,) Tj ET
+BT /F_Reg 15 Tf 0.200 0.550 0.950 rg 80.00 198.00 Td (quero consultar medicamentos em n\355vel cr\355tico de estoque e exportar o relat\363rio de vendas em CSV,) Tj ET
+BT /F_Reg 15 Tf 0.850 0.880 0.920 rg 80.00 174.00 Td (para repor medicamentos essenciais a tempo, evitar vencimentos e conferir o faturamento do caixa.) Tj ET
+0.220 0.280 0.380 RG 1.00 w 80.00 150.00 m 1200.00 150.00 l S
+BT /F_Bold 11 Tf 0.600 0.650 0.750 rg 80.00 128.00 Td (CRIT\311RIOS DE ACEITA\307\303O \(CONFIRMA\307\303O / DOD\):) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 80.00 104.00 Td ([+] Filtro imediato onde estoque <= estoque_minimo;) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 480.00 104.00 Td ([+] Compara\347\343o de datas no formato ISO 8601;) Tj ET
+BT /F_Reg 12 Tf 0.850 0.880 0.920 rg 860.00 104.00 Td ([+] Grava\347\343o f\355sica de arquivo CSV na pasta reports/.) Tj ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1280 720] /Resources << /Font << /F_Reg 3 0 R /F_Bold 4 0 R /F_Mono 5 0 R /F_MonoBold 6 0 R >> >> /Contents 20 0 R >>
+endobj
+20 0 obj
+<< /Length 7549 >>
+stream
+0.070 0.090 0.130 rg 0.00 0.00 1280.00 720.00 re f
+0.080 0.100 0.150 rg 0.00 660.00 1280.00 60.00 re f
+0.200 0.250 0.350 RG 1.20 w 0.00 660.00 m 1280.00 660.00 l S
+BT /F_Bold 11 Tf 0.550 0.650 0.800 rg 60.00 684.00 Td (UFAL - Bacharelado em Sistemas de Informa\347\343o) Tj ET
+BT /F_Bold 13 Tf 1.000 1.000 1.000 rg 380.00 684.00 Td (07. Casos de Uso e Diagrama UML \(Software Draw.io\)) Tj ET
+BT /F_Reg 11 Tf 0.600 0.700 0.850 rg 990.00 684.00 Td (Kawe Firmino - Slide 7/11) Tj ET
+BT /F_Bold 24 Tf 0.980 0.980 0.980 rg 60.00 595.00 Td (Modelagem Formal de Casos de Uso \(Valente, p. 97-100\)) Tj ET
+BT /F_Reg 13 Tf 0.100 0.750 0.650 rg 60.00 572.00 Td (Arquivo edit\341vel gerado no projeto: docs/diagrama_casos_de_uso.drawio \(abrir em app.diagrams.net\)) Tj ET
+0.980 0.980 0.990 rg 0.700 0.750 0.820 RG 1.50 w 68.00 50.00 m 1212.00 50.00 l 1216.42 50.00 1220.00 53.58 1220.00 58.00 c 1220.00 537.00 l 1220.00 541.42 1216.42 545.00 1212.00 545.00 c 68.00 545.00 l 63.58 545.00 60.00 541.42 60.00 537.00 c 60.00 58.00 l 60.00 53.58 63.58 50.00 68.00 50.00 c h B
+1.000 1.000 1.000 rg 0.300 0.350 0.450 RG 1.80 w 264.00 65.00 m 1016.00 65.00 l 1018.21 65.00 1020.00 66.79 1020.00 69.00 c 1020.00 526.00 l 1020.00 528.21 1018.21 530.00 1016.00 530.00 c 264.00 530.00 l 261.79 530.00 260.00 528.21 260.00 526.00 c 260.00 69.00 l 260.00 66.79 261.79 65.00 264.00 65.00 c h B
+BT /F_Bold 13 Tf 0.100 0.150 0.250 rg 413.80 508.00 Td (Sistema de Gerenciamento de Farm\341cia \(Drogaria Vida & Sa\372de\)) Tj ET
+0.880 0.920 0.960 rg 0.150 0.220 0.330 RG 2.00 w 150.00 347.00 m 150.00 347.00 l 159.94 347.00 168.00 355.06 168.00 365.00 c 168.00 365.00 l 168.00 374.94 159.94 383.00 150.00 383.00 c 150.00 383.00 l 140.06 383.00 132.00 374.94 132.00 365.00 c 132.00 365.00 l 132.00 355.06 140.06 347.00 150.00 347.00 c h B
+0.150 0.220 0.330 RG 2.00 w 150.00 347.00 m 150.00 297.00 l S
+0.150 0.220 0.330 RG 2.00 w 125.00 329.00 m 175.00 329.00 l S
+0.150 0.220 0.330 RG 2.00 w 150.00 297.00 m 130.00 250.00 l S
+0.150 0.220 0.330 RG 2.00 w 150.00 297.00 m 170.00 250.00 l S
+BT /F_Bold 11 Tf 0.150 0.220 0.330 rg 95.77 229.00 Td (Operador de Caixa) Tj ET
+BT /F_Bold 11 Tf 0.150 0.220 0.330 rg 114.91 215.00 Td (/ Atendente) Tj ET
+0.880 0.920 0.960 rg 0.150 0.220 0.330 RG 2.00 w 1130.00 347.00 m 1130.00 347.00 l 1139.94 347.00 1148.00 355.06 1148.00 365.00 c 1148.00 365.00 l 1148.00 374.94 1139.94 383.00 1130.00 383.00 c 1130.00 383.00 l 1120.06 383.00 1112.00 374.94 1112.00 365.00 c 1112.00 365.00 l 1112.00 355.06 1120.06 347.00 1130.00 347.00 c h B
+0.150 0.220 0.330 RG 2.00 w 1130.00 347.00 m 1130.00 297.00 l S
+0.150 0.220 0.330 RG 2.00 w 1105.00 329.00 m 1155.00 329.00 l S
+0.150 0.220 0.330 RG 2.00 w 1130.00 297.00 m 1110.00 250.00 l S
+0.150 0.220 0.330 RG 2.00 w 1130.00 297.00 m 1150.00 250.00 l S
+BT /F_Bold 11 Tf 0.150 0.220 0.330 rg 1091.72 229.00 Td (Farmac\352utico) Tj ET
+BT /F_Bold 11 Tf 0.150 0.220 0.330 rg 1075.77 215.00 Td (/ Gerente de Loja) Tj ET
+0.850 0.920 0.990 rg 0.150 0.450 0.850 RG 1.50 w 323.00 439.00 m 507.00 439.00 l 519.70 439.00 530.00 449.30 530.00 462.00 c 530.00 462.00 l 530.00 474.70 519.70 485.00 507.00 485.00 c 323.00 485.00 l 310.30 485.00 300.00 474.70 300.00 462.00 c 300.00 462.00 l 300.00 449.30 310.30 439.00 323.00 439.00 c h B
+BT /F_Bold 11 Tf 0.050 0.200 0.500 rg 328.87 458.00 Td (UC01: Realizar Venda no PDV) Tj ET
+0.990 0.920 0.920 rg 0.850 0.200 0.200 RG 1.50 w 740.00 455.00 m 940.00 455.00 l 951.05 455.00 960.00 463.95 960.00 475.00 c 960.00 475.00 l 960.00 486.05 951.05 495.00 940.00 495.00 c 740.00 495.00 l 728.95 495.00 720.00 486.05 720.00 475.00 c 720.00 475.00 l 720.00 463.95 728.95 455.00 740.00 455.00 c h B
+BT /F_Bold 11 Tf 0.600 0.100 0.100 rg 725.16 471.00 Td (UC02: Validar Estoque \(Tudo ou Nada\)) Tj ET
+0.990 0.920 0.920 rg 0.850 0.200 0.200 RG 1.50 w 740.00 402.00 m 940.00 402.00 l 951.05 402.00 960.00 410.95 960.00 422.00 c 960.00 422.00 l 960.00 433.05 951.05 442.00 940.00 442.00 c 740.00 442.00 l 728.95 442.00 720.00 433.05 720.00 422.00 c 720.00 422.00 l 720.00 410.95 728.95 402.00 740.00 402.00 c h B
+BT /F_Bold 11 Tf 0.600 0.100 0.100 rg 737.92 418.00 Td (UC03: Calcular Subtotais e Total) Tj ET
+0.920 0.980 0.940 rg 0.100 0.650 0.300 RG 1.50 w 320.00 375.00 m 500.00 375.00 l 511.05 375.00 520.00 383.95 520.00 395.00 c 520.00 395.00 l 520.00 406.05 511.05 415.00 500.00 415.00 c 320.00 415.00 l 308.95 415.00 300.00 406.05 300.00 395.00 c 300.00 395.00 l 300.00 383.95 308.95 375.00 320.00 375.00 c h B
+BT /F_Bold 11 Tf 0.050 0.400 0.150 rg 298.35 391.00 Td (UC04: Identificar Cliente no Balc\343o) Tj ET
+0.930 0.960 1.000 rg 0.250 0.500 0.900 RG 1.50 w 502.00 306.00 m 758.00 306.00 l 770.15 306.00 780.00 315.85 780.00 328.00 c 780.00 328.00 l 780.00 340.15 770.15 350.00 758.00 350.00 c 502.00 350.00 l 489.85 350.00 480.00 340.15 480.00 328.00 c 480.00 328.00 l 480.00 315.85 489.85 306.00 502.00 306.00 c h B
+BT /F_Bold 11 Tf 0.100 0.250 0.550 rg 502.40 324.00 Td (UC05: Cadastrar / Atualizar Medicamentos) Tj ET
+0.930 0.960 1.000 rg 0.250 0.500 0.900 RG 1.50 w 502.00 251.00 m 758.00 251.00 l 770.15 251.00 780.00 260.85 780.00 273.00 c 780.00 273.00 l 780.00 285.15 770.15 295.00 758.00 295.00 c 502.00 295.00 l 489.85 295.00 480.00 285.15 480.00 273.00 c 480.00 273.00 l 480.00 260.85 489.85 251.00 502.00 251.00 c h B
+BT /F_Bold 11 Tf 0.100 0.250 0.550 rg 496.02 269.00 Td (UC06: Registrar Entrada de Estoque \(Lotes\)) Tj ET
+0.930 0.960 1.000 rg 0.250 0.500 0.900 RG 1.50 w 502.00 196.00 m 758.00 196.00 l 770.15 196.00 780.00 205.85 780.00 218.00 c 780.00 218.00 l 780.00 230.15 770.15 240.00 758.00 240.00 c 502.00 240.00 l 489.85 240.00 480.00 230.15 480.00 218.00 c 480.00 218.00 l 480.00 205.85 489.85 196.00 502.00 196.00 c h B
+BT /F_Bold 11 Tf 0.100 0.250 0.550 rg 496.02 214.00 Td (UC07: Consultar Estoque Cr\355tico e Validade) Tj ET
+0.930 0.960 1.000 rg 0.250 0.500 0.900 RG 1.50 w 502.00 141.00 m 758.00 141.00 l 770.15 141.00 780.00 150.85 780.00 163.00 c 780.00 163.00 l 780.00 175.15 770.15 185.00 758.00 185.00 c 502.00 185.00 l 489.85 185.00 480.00 175.15 480.00 163.00 c 480.00 163.00 l 480.00 150.85 489.85 141.00 502.00 141.00 c h B
+BT /F_Bold 11 Tf 0.100 0.250 0.550 rg 496.02 159.00 Td (UC08: Exportar Relat\363rios em Planilhas CSV) Tj ET
+0.930 0.960 1.000 rg 0.250 0.500 0.900 RG 1.50 w 502.00 86.00 m 758.00 86.00 l 770.15 86.00 780.00 95.85 780.00 108.00 c 780.00 108.00 l 780.00 120.15 770.15 130.00 758.00 130.00 c 502.00 130.00 l 489.85 130.00 480.00 120.15 480.00 108.00 c 480.00 108.00 l 480.00 95.85 489.85 86.00 502.00 86.00 c h B
+BT /F_Bold 11 Tf 0.100 0.250 0.550 rg 515.16 104.00 Td (UC09: Gerenciar Cadastro de Clientes) Tj ET
+0.200 0.300 0.450 RG 1.50 w 180.00 325.00 m 300.00 462.00 l S
+0.200 0.300 0.450 RG 1.50 w 180.00 295.00 m 480.00 108.00 l S
+[4 4] 0 d
+0.850 0.200 0.200 RG 1.20 w 530.00 470.00 m 720.00 475.00 l S
+[] 0 d
+BT /F_Bold 9 Tf 0.850 0.200 0.200 rg 570.00 476.00 Td (<<include>>) Tj ET
+[4 4] 0 d
+0.850 0.200 0.200 RG 1.20 w 530.00 455.00 m 720.00 425.00 l S
+[] 0 d
+BT /F_Bold 9 Tf 0.850 0.200 0.200 rg 570.00 430.00 Td (<<include>>) Tj ET
+[4 4] 0 d
+0.100 0.650 0.300 RG 1.20 w 410.00 415.00 m 410.00 439.00 l S
+[] 0 d
+BT /F_Bold 9 Tf 0.100 0.650 0.300 rg 418.00 422.00 Td (<<extend>>) Tj ET
+0.200 0.300 0.450 RG 1.50 w 1100.00 315.00 m 780.00 328.00 l S
+0.200 0.300 0.450 RG 1.50 w 1100.00 315.00 m 780.00 273.00 l S
+0.200 0.300 0.450 RG 1.50 w 1100.00 315.00 m 780.00 218.00 l S
+0.200 0.300 0.450 RG 1.50 w 1100.00 315.00 m 780.00 163.00 l S
+0.200 0.300 0.450 RG 1.50 w 1100.00 315.00 m 780.00 108.00 l S
+endstream
+endobj
+21 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1280 720] /Resources << /Font << /F_Reg 3 0 R /F_Bold 4 0 R /F_Mono 5 0 R /F_MonoBold 6 0 R >> >> /Contents 22 0 R >>
+endobj
+22 0 obj
+<< /Length 7776 >>
+stream
+0.070 0.090 0.130 rg 0.00 0.00 1280.00 720.00 re f
+0.080 0.100 0.150 rg 0.00 660.00 1280.00 60.00 re f
+0.200 0.250 0.350 RG 1.20 w 0.00 660.00 m 1280.00 660.00 l S
+BT /F_Bold 11 Tf 0.550 0.650 0.800 rg 60.00 684.00 Td (UFAL - Bacharelado em Sistemas de Informa\347\343o) Tj ET
+BT /F_Bold 13 Tf 1.000 1.000 1.000 rg 380.00 684.00 Td (08. O Que Foi Atendido pelo Projeto \(MVP Entregue\)) Tj ET
+BT /F_Reg 11 Tf 0.600 0.700 0.850 rg 990.00 684.00 Td (Kawe Firmino - Slide 8/11) Tj ET
+0.110 0.140 0.220 rg 0.220 0.300 0.450 RG 1.00 w 66.00 617.00 m 1214.00 617.00 l 1217.31 617.00 1220.00 619.69 1220.00 623.00 c 1220.00 639.00 l 1220.00 642.31 1217.31 645.00 1214.00 645.00 c 66.00 645.00 l 62.69 645.00 60.00 642.31 60.00 639.00 c 60.00 623.00 l 60.00 619.69 62.69 617.00 66.00 617.00 c h B
+BT /F_Bold 11 Tf 0.200 0.750 0.950 rg 75.00 626.00 Td (Pergunta do Roteiro: "O que foi atendido pelo seu projeto?") Tj ET
+BT /F_Bold 24 Tf 0.980 0.980 0.980 rg 60.00 590.00 Td (Produto M\355nimo Vi\341vel Entregue vs. Escopo Futuro \(Valente, p. 101-103\)) Tj ET
+BT /F_Reg 14 Tf 0.600 0.650 0.750 rg 60.00 565.00 Td (Valida\347\343o pr\341tica da hip\363tese de valor do neg\363cio no menor tempo e com alta confiabilidade:) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 68.00 50.00 m 732.00 50.00 l 736.42 50.00 740.00 53.58 740.00 58.00 c 740.00 527.00 l 740.00 531.42 736.42 535.00 732.00 535.00 c 68.00 535.00 l 63.58 535.00 60.00 531.42 60.00 527.00 c 60.00 58.00 l 60.00 53.58 63.58 50.00 68.00 50.00 c h B
+BT /F_Bold 13 Tf 0.100 0.750 0.650 rg 80.00 508.00 Td (MATRIZ DE ATENDIMENTO DE ESCOPO DO MVP:) Tj ET
+0.080 0.120 0.200 rg 84.00 462.00 m 716.00 462.00 l 718.21 462.00 720.00 463.79 720.00 466.00 c 720.00 486.00 l 720.00 488.21 718.21 490.00 716.00 490.00 c 84.00 490.00 l 81.79 490.00 80.00 488.21 80.00 486.00 c 80.00 466.00 l 80.00 463.79 81.79 462.00 84.00 462.00 c h f
+BT /F_Bold 11 Tf 0.600 0.650 0.750 rg 90.00 472.00 Td (Funcionalidade Mapeada) Tj ET
+BT /F_Bold 11 Tf 0.600 0.650 0.750 rg 380.00 472.00 Td (Status no MVP) Tj ET
+BT /F_Bold 11 Tf 0.600 0.650 0.750 rg 500.00 472.00 Td (Impacto no Neg\363cio) Tj ET
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 90.00 442.00 Td (Cadastro e Cat\341logo de Medicamentos) Tj ET
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 380.00 442.00 Td ([ENTREGUE]) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 500.00 442.00 Td (Pre\347os e estoque inicial ativos) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 436.00 m 720.00 436.00 l S
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 90.00 419.00 Td (Ponto de Venda \(PDV\) com Carrinho) Tj ET
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 380.00 419.00 Td ([ENTREGUE]) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 500.00 419.00 Td (Atendimento \341gil no balc\343o) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 413.00 m 720.00 413.00 l S
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 90.00 396.00 Td (Bloqueio de Venda sem Estoque) Tj ET
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 380.00 396.00 Td ([ENTREGUE]) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 500.00 396.00 Td (Consist\352ncia 'Tudo ou Nada') Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 390.00 m 720.00 390.00 l S
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 90.00 373.00 Td (Registro de Reposi\347\343o de Lotes) Tj ET
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 380.00 373.00 Td ([ENTREGUE]) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 500.00 373.00 Td (Rastreabilidade de entradas) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 367.00 m 720.00 367.00 l S
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 90.00 350.00 Td (Alertas de Estoque M\355nimo e Validade) Tj ET
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 380.00 350.00 Td ([ENTREGUE]) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 500.00 350.00 Td (Preven\347\343o contra desabastecimento) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 344.00 m 720.00 344.00 l S
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 90.00 327.00 Td (Persist\352ncia em Banco SQLite \(FK\)) Tj ET
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 380.00 327.00 Td ([ENTREGUE]) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 500.00 327.00 Td (Integridade relacional dos dados) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 321.00 m 720.00 321.00 l S
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 90.00 304.00 Td (Exporta\347\343o de Planilhas em CSV) Tj ET
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 380.00 304.00 Td ([ENTREGUE]) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 500.00 304.00 Td (Confer\352ncia externa no Excel) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 298.00 m 720.00 298.00 l S
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 90.00 281.00 Td (Emiss\343o de Nota Fiscal Eletr\364nica \(NFC-e\)) Tj ET
+BT /F_Bold 11 Tf 0.850 0.600 0.200 rg 380.00 281.00 Td ([P\323S-MVP]) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 500.00 281.00 Td (Depende de certificado digital SEFAZ) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 275.00 m 720.00 275.00 l S
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 90.00 258.00 Td (Integra\347\343o com Maquininha TEF) Tj ET
+BT /F_Bold 11 Tf 0.850 0.600 0.200 rg 380.00 258.00 Td ([P\323S-MVP]) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 500.00 258.00 Td (Operado via POS f\355sico de balc\343o) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 252.00 m 720.00 252.00 l S
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 90.00 235.00 Td (Integra\347\343o com SNGPC / ANVISA) Tj ET
+BT /F_Bold 11 Tf 0.850 0.600 0.200 rg 380.00 235.00 Td ([P\323S-MVP]) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 500.00 235.00 Td (Complexidade desnecess\341ria no MVP) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 229.00 m 720.00 229.00 l S
+0.960 0.960 0.930 rg 0.750 0.750 0.750 RG 1.50 w 768.00 50.00 m 1212.00 50.00 l 1216.42 50.00 1220.00 53.58 1220.00 58.00 c 1220.00 527.00 l 1220.00 531.42 1216.42 535.00 1212.00 535.00 c 768.00 535.00 l 763.58 535.00 760.00 531.42 760.00 527.00 c 760.00 58.00 l 760.00 53.58 763.58 50.00 768.00 50.00 c h B
+BT /F_MonoBold 14 Tf 0.100 0.100 0.100 rg 901.80 500.00 Td (DROGARIA VIDA & SA\332DE) Tj ET
+BT /F_Mono 10 Tf 0.300 0.300 0.300 rg 855.00 482.00 Td (Av. Fernandes Lima, 1020 - Centro - Arapiraca) Tj ET
+BT /F_Mono 10 Tf 0.300 0.300 0.300 rg 918.00 468.00 Td (CNPJ: 12.345.678/0001-90) Tj ET
+[3 3] 0 d
+0.500 0.500 0.500 RG 1.00 w 780.00 458.00 m 1200.00 458.00 l S
+[] 0 d
+BT /F_MonoBold 11 Tf 0.100 0.100 0.100 rg 780.00 440.00 Td (COMPROVANTE DE VENDA: #00042) Tj ET
+BT /F_Mono 10 Tf 0.300 0.300 0.300 rg 780.00 424.00 Td (DATA: 19/11/2026 19:30   CAIXA: 01) Tj ET
+BT /F_Mono 10 Tf 0.300 0.300 0.300 rg 780.00 408.00 Td (CLIENTE: Consumidor Avulso) Tj ET
+0.500 0.500 0.500 RG 1.00 w 780.00 398.00 m 1200.00 398.00 l S
+BT /F_MonoBold 10 Tf 0.100 0.100 0.100 rg 780.00 382.00 Td (ITEM COD  DESC             QTD  PRECO   TOTAL) Tj ET
+[2 2] 0 d
+0.500 0.500 0.500 RG 1.00 w 780.00 374.00 m 1200.00 374.00 l S
+[] 0 d
+BT /F_Mono 10 Tf 0.100 0.100 0.100 rg 780.00 352.00 Td (01   M01  Dipirona 500mg   2 un  12.50  25.00) Tj ET
+BT /F_Mono 10 Tf 0.100 0.100 0.100 rg 780.00 332.00 Td (02   M04  Amoxicilina 500  1 un  28.90  28.90) Tj ET
+BT /F_Mono 10 Tf 0.100 0.100 0.100 rg 780.00 312.00 Td (03   M07  Vitamina C 1g    2 un  15.00  30.00) Tj ET
+[3 3] 0 d
+0.500 0.500 0.500 RG 1.00 w 780.00 286.00 m 1200.00 286.00 l S
+[] 0 d
+BT /F_MonoBold 11 Tf 0.100 0.100 0.100 rg 780.00 264.00 Td (SUBTOTAL:                        R$ 83,90) Tj ET
+BT /F_Mono 10 Tf 0.300 0.300 0.300 rg 780.00 246.00 Td (DESCONTO:                        R$  0,00) Tj ET
+BT /F_MonoBold 14 Tf 0.800 0.150 0.150 rg 780.00 222.00 Td (TOTAL GERAL:                     R$ 83,90) Tj ET
+0.500 0.500 0.500 RG 1.00 w 780.00 206.00 m 1200.00 206.00 l S
+BT /F_MonoBold 11 Tf 0.080 0.500 0.250 rg 884.40 182.00 Td (ESTOQUE: BAIXA AT\324MICA EFETUADA!) Tj ET
+BT /F_Mono 9 Tf 0.300 0.300 0.300 rg 852.30 162.00 Td (Arquivo CSV gerado em: reports/relatorio_vendas.csv) Tj ET
+BT /F_Mono 10 Tf 0.200 0.200 0.200 rg 870.00 142.00 Td (Obrigado pela prefer\352ncia! Volte sempre!) Tj ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1280 720] /Resources << /Font << /F_Reg 3 0 R /F_Bold 4 0 R /F_Mono 5 0 R /F_MonoBold 6 0 R >> >> /Contents 24 0 R >>
+endobj
+24 0 obj
+<< /Length 7277 >>
+stream
+0.070 0.090 0.130 rg 0.00 0.00 1280.00 720.00 re f
+0.080 0.100 0.150 rg 0.00 660.00 1280.00 60.00 re f
+0.200 0.250 0.350 RG 1.20 w 0.00 660.00 m 1280.00 660.00 l S
+BT /F_Bold 11 Tf 0.550 0.650 0.800 rg 60.00 684.00 Td (UFAL - Bacharelado em Sistemas de Informa\347\343o) Tj ET
+BT /F_Bold 13 Tf 1.000 1.000 1.000 rg 380.00 684.00 Td (09. Mapeamento das Estruturas no C\363digo \(Pontua\347\343o da Rubrica\)) Tj ET
+BT /F_Reg 11 Tf 0.600 0.700 0.850 rg 990.00 684.00 Td (Kawe Firmino - Slide 9/11) Tj ET
+0.110 0.140 0.220 rg 0.220 0.300 0.450 RG 1.00 w 66.00 617.00 m 1214.00 617.00 l 1217.31 617.00 1220.00 619.69 1220.00 623.00 c 1220.00 639.00 l 1220.00 642.31 1217.31 645.00 1214.00 645.00 c 66.00 645.00 l 62.69 645.00 60.00 642.31 60.00 639.00 c 60.00 623.00 l 60.00 619.69 62.69 617.00 66.00 617.00 c h B
+BT /F_Bold 11 Tf 0.200 0.750 0.950 rg 75.00 626.00 Td (Pergunta do Roteiro: "Quais e onde foram utilizadas as estruturas no c\363digo?") Tj ET
+BT /F_Bold 24 Tf 0.980 0.980 0.980 rg 60.00 595.00 Td (Comprova\347\343o de Uso das Estruturas Obrigat\363rias \(1,0 Ponto Cada\)) Tj ET
+BT /F_Reg 13 Tf 0.600 0.650 0.750 rg 60.00 572.00 Td (Mapeamento exato de arquivo, m\351todo e linha comprovando o cumprimento de todas as exig\352ncias:) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 68.00 45.00 m 1212.00 45.00 l 1216.42 45.00 1220.00 48.58 1220.00 53.00 c 1220.00 537.00 l 1220.00 541.42 1216.42 545.00 1212.00 545.00 c 68.00 545.00 l 63.58 545.00 60.00 541.42 60.00 537.00 c 60.00 53.00 l 60.00 48.58 63.58 45.00 68.00 45.00 c h B
+0.080 0.140 0.240 rg 84.00 500.00 m 1196.00 500.00 l 1198.21 500.00 1200.00 501.79 1200.00 504.00 c 1200.00 526.00 l 1200.00 528.21 1198.21 530.00 1196.00 530.00 c 84.00 530.00 l 81.79 530.00 80.00 528.21 80.00 526.00 c 80.00 504.00 l 80.00 501.79 81.79 500.00 84.00 500.00 c h f
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 90.00 510.00 Td (Estrutura Exigida \(1,0 pt\)) Tj ET
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 320.00 510.00 Td (Arquivo no Projeto) Tj ET
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 590.00 510.00 Td (Fun\347\343o / M\351todo) Tj ET
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 820.00 510.00 Td (Aplica\347\343o Pr\341tica no Dom\355nio da Farm\341cia) Tj ET
+BT /F_Bold 11 Tf 0.980 0.980 0.980 rg 90.00 478.00 Td (Condicionais \(if/else\)) Tj ET
+BT /F_Mono 10 Tf 0.200 0.550 0.950 rg 320.00 478.00 Td (services/medicamento_service.py) Tj ET
+BT /F_Mono 10 Tf 0.100 0.750 0.650 rg 590.00 478.00 Td (cadastrar\(\), atualizar\(\)) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 820.00 478.00 Td (Bloqueio de pre\347os/estoque negativos e valida\347\343o de validade.) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 472.00 m 1200.00 472.00 l S
+BT /F_Bold 11 Tf 0.980 0.980 0.980 rg 90.00 454.00 Td (Sele\347\343o \(match/case\)) Tj ET
+BT /F_Mono 10 Tf 0.200 0.550 0.950 rg 320.00 454.00 Td (cli/terminal_interface.py) Tj ET
+BT /F_Mono 10 Tf 0.100 0.750 0.650 rg 590.00 454.00 Td (iniciar\(\), menu_*\(\)) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 820.00 454.00 Td (Roteamento das op\347\365es de navega\347\343o e comandos do usu\341rio.) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 448.00 m 1200.00 448.00 l S
+BT /F_Bold 11 Tf 0.980 0.980 0.980 rg 90.00 430.00 Td (La\347o while \(Caso Real\)) Tj ET
+BT /F_Mono 10 Tf 0.200 0.550 0.950 rg 320.00 430.00 Td (cli/terminal_interface.py) Tj ET
+BT /F_Mono 10 Tf 0.100 0.750 0.650 rg 590.00 430.00 Td (menu_*\(\), registrar_venda\(\)) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 820.00 430.00 Td (Loop cont\355nuo dos menus e processamento do carrinho no PDV.) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 424.00 m 1200.00 424.00 l S
+BT /F_Bold 11 Tf 0.980 0.980 0.980 rg 90.00 406.00 Td (La\347o for) Tj ET
+BT /F_Mono 10 Tf 0.200 0.550 0.950 rg 320.00 406.00 Td (services/venda_service.py) Tj ET
+BT /F_Mono 10 Tf 0.100 0.750 0.650 rg 590.00 406.00 Td (registrar_venda\(\)) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 820.00 406.00 Td (Varredura sequencial dos itens da compra e baixa at\364mica de estoque.) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 400.00 m 1200.00 400.00 l S
+BT /F_Bold 11 Tf 0.980 0.980 0.980 rg 90.00 382.00 Td (Subprogramas / Fun\347\365es) Tj ET
+BT /F_Mono 10 Tf 0.200 0.550 0.950 rg 320.00 382.00 Td (services/* e repositories/*) Tj ET
+BT /F_Mono 10 Tf 0.100 0.750 0.650 rg 590.00 382.00 Td (M\372ltiplos m\351todos modulares) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 820.00 382.00 Td (Divis\343o estrita de responsabilidades em fun\347\365es coesas \(SRP\).) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 376.00 m 1200.00 376.00 l S
+BT /F_Bold 11 Tf 0.980 0.980 0.980 rg 90.00 358.00 Td (Listas Din\342micas) Tj ET
+BT /F_Mono 10 Tf 0.200 0.550 0.950 rg 320.00 358.00 Td (models/venda.py, services/*) Tj ET
+BT /F_Mono 10 Tf 0.100 0.750 0.650 rg 590.00 358.00 Td (carrinho, self.itens) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 820.00 358.00 Td (Armazenamento dos itens da cesta e listas retornadas de consultas.) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 352.00 m 1200.00 352.00 l S
+BT /F_Bold 11 Tf 0.980 0.980 0.980 rg 90.00 334.00 Td (Matrizes \(list[list]\)) Tj ET
+BT /F_Mono 10 Tf 0.200 0.550 0.950 rg 320.00 334.00 Td (services/relatorio_service.py) Tj ET
+BT /F_Mono 10 Tf 0.100 0.750 0.650 rg 590.00 334.00 Td (gerar_matriz_estoque\(\)) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 820.00 334.00 Td (Montagem de grade bidimensional com cabe\347alho e dados tabulados.) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 328.00 m 1200.00 328.00 l S
+BT /F_Bold 11 Tf 0.980 0.980 0.980 rg 90.00 310.00 Td (Cadeias de Caracteres) Tj ET
+BT /F_Mono 10 Tf 0.200 0.550 0.950 rg 320.00 310.00 Td (repositories/medicamento_repo.py) Tj ET
+BT /F_Mono 10 Tf 0.100 0.750 0.650 rg 590.00 310.00 Td (buscar_por_nome\(\), _validar\(\)) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 820.00 310.00 Td (Uso de .strip\(\), .lower\(\), LIKE insens\355vel e datas ISO 8601.) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 304.00 m 1200.00 304.00 l S
+BT /F_Bold 11 Tf 0.980 0.980 0.980 rg 90.00 286.00 Td (Dicion\341rios e Tuplas) Tj ET
+BT /F_Mono 10 Tf 0.200 0.550 0.950 rg 320.00 286.00 Td (models/*.py, repositories/*) Tj ET
+BT /F_Mono 10 Tf 0.100 0.750 0.650 rg 590.00 286.00 Td (to_dict\(\), cursor.execute\(\)) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 820.00 286.00 Td (Dicion\341rios para serializa\347\343o e tuplas em Prepared Statements.) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 280.00 m 1200.00 280.00 l S
+BT /F_Bold 11 Tf 0.980 0.980 0.980 rg 90.00 262.00 Td (Arquivos F\355sicos \(CSV\)) Tj ET
+BT /F_Mono 10 Tf 0.200 0.550 0.950 rg 320.00 262.00 Td (exporters/csv_exporter.py) Tj ET
+BT /F_Mono 10 Tf 0.100 0.750 0.650 rg 590.00 262.00 Td (exportar\(\)) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 820.00 262.00 Td (Grava\347\343o em disco com open\(\) e csv.writer\(delimiter=';', utf-8\).) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 256.00 m 1200.00 256.00 l S
+BT /F_Bold 11 Tf 0.980 0.980 0.980 rg 90.00 238.00 Td (Banco SQLite Relacional) Tj ET
+BT /F_Mono 10 Tf 0.200 0.550 0.950 rg 320.00 238.00 Td (database/schema.sql, repo/*) Tj ET
+BT /F_Mono 10 Tf 0.100 0.750 0.650 rg 590.00 238.00 Td (SqliteUnitOfWork, cursor) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 820.00 238.00 Td (Tabelas com Foreign Keys, transa\347\365es at\364micas e \355ndices.) Tj ET
+0.140 0.180 0.260 RG 1.00 w 80.00 232.00 m 1200.00 232.00 l S
+endstream
+endobj
+25 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1280 720] /Resources << /Font << /F_Reg 3 0 R /F_Bold 4 0 R /F_Mono 5 0 R /F_MonoBold 6 0 R >> >> /Contents 26 0 R >>
+endobj
+26 0 obj
+<< /Length 11820 >>
+stream
+0.070 0.090 0.130 rg 0.00 0.00 1280.00 720.00 re f
+0.080 0.100 0.150 rg 0.00 660.00 1280.00 60.00 re f
+0.200 0.250 0.350 RG 1.20 w 0.00 660.00 m 1280.00 660.00 l S
+BT /F_Bold 11 Tf 0.550 0.650 0.800 rg 60.00 684.00 Td (UFAL - Bacharelado em Sistemas de Informa\347\343o) Tj ET
+BT /F_Bold 13 Tf 1.000 1.000 1.000 rg 380.00 684.00 Td (10. Atividades Semanais e Cronograma de Execu\347\343o \(0,5 Ponto\)) Tj ET
+BT /F_Reg 11 Tf 0.600 0.700 0.850 rg 990.00 684.00 Td (Kawe Firmino - Slide 10/11) Tj ET
+0.110 0.140 0.220 rg 0.220 0.300 0.450 RG 1.00 w 66.00 617.00 m 1214.00 617.00 l 1217.31 617.00 1220.00 619.69 1220.00 623.00 c 1220.00 639.00 l 1220.00 642.31 1217.31 645.00 1214.00 645.00 c 66.00 645.00 l 62.69 645.00 60.00 642.31 60.00 639.00 c 60.00 623.00 l 60.00 619.69 62.69 617.00 66.00 617.00 c h B
+BT /F_Bold 11 Tf 0.200 0.750 0.950 rg 75.00 626.00 Td (Pergunta do Roteiro: "Atividades semanais \(0,5 ponto\)") Tj ET
+BT /F_Bold 24 Tf 0.980 0.980 0.980 rg 60.00 590.00 Td (Evolu\347\343o do Projeto ao Longo das Semanas de Desenvolvimento) Tj ET
+BT /F_Reg 14 Tf 0.600 0.650 0.750 rg 60.00 565.00 Td (Registro das entregas iterativas do ciclo de vida do software:) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 68.00 50.00 m 272.00 50.00 l 276.42 50.00 280.00 53.58 280.00 58.00 c 280.00 527.00 l 280.00 531.42 276.42 535.00 272.00 535.00 c 68.00 535.00 l 63.58 535.00 60.00 531.42 60.00 527.00 c 60.00 58.00 l 60.00 53.58 63.58 50.00 68.00 50.00 c h B
+0.080 0.140 0.240 rg 79.00 496.00 m 261.00 496.00 l 263.21 496.00 265.00 497.79 265.00 500.00 c 265.00 516.00 l 265.00 518.21 263.21 520.00 261.00 520.00 c 79.00 520.00 l 76.79 520.00 75.00 518.21 75.00 516.00 c 75.00 500.00 l 75.00 497.79 76.79 496.00 79.00 496.00 c h f
+BT /F_Bold 10 Tf 0.100 0.750 0.650 rg 85.00 504.00 Td (SEMANA 1) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 75.00 473.00 Td (Levantamento e) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 75.00 457.00 Td (Requisitos \(Valente Cap. 3\)) Tj ET
+0.220 0.280 0.380 RG 1.00 w 75.00 441.00 m 265.00 441.00 l S
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 76.00 415.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 86.00 415.00 Td (Visita ao estabelecimento) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 86.00 401.00 Td (e observa\347\343o da) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 86.00 387.00 Td (rotina de balc\343o;) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 76.00 367.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 86.00 367.00 Td (Leitura e fichamento) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 86.00 353.00 Td (do Cap\355tulo 3) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 86.00 339.00 Td (de Marco Tulio Valente;) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 76.00 319.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 86.00 319.00 Td (Identifica\347\343o das dores) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 86.00 305.00 Td (de neg\363cio \(demandas) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 86.00 291.00 Td (da farm\341cia\);) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 76.00 271.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 86.00 271.00 Td (Mapeamento inicial de) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 86.00 257.00 Td (RFs, RNFs e) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 86.00 243.00 Td (hip\363teses do MVP.) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 303.00 50.00 m 507.00 50.00 l 511.42 50.00 515.00 53.58 515.00 58.00 c 515.00 527.00 l 515.00 531.42 511.42 535.00 507.00 535.00 c 303.00 535.00 l 298.58 535.00 295.00 531.42 295.00 527.00 c 295.00 58.00 l 295.00 53.58 298.58 50.00 303.00 50.00 c h B
+0.080 0.140 0.240 rg 314.00 496.00 m 496.00 496.00 l 498.21 496.00 500.00 497.79 500.00 500.00 c 500.00 516.00 l 500.00 518.21 498.21 520.00 496.00 520.00 c 314.00 520.00 l 311.79 520.00 310.00 518.21 310.00 516.00 c 310.00 500.00 l 310.00 497.79 311.79 496.00 314.00 496.00 c h f
+BT /F_Bold 10 Tf 0.200 0.550 0.950 rg 320.00 504.00 Td (SEMANA 2) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 310.00 473.00 Td (Modelagem de) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 310.00 457.00 Td (Casos de Uso e Hist\363rias) Tj ET
+0.220 0.280 0.380 RG 1.00 w 310.00 441.00 m 500.00 441.00 l S
+BT /F_Bold 12 Tf 0.200 0.550 0.950 rg 311.00 415.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 321.00 415.00 Td (Elabora\347\343o das Hist\363rias) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 321.00 401.00 Td (de Usu\341rios com) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 321.00 387.00 Td (crit\351rios INVEST;) Tj ET
+BT /F_Bold 12 Tf 0.200 0.550 0.950 rg 311.00 367.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 321.00 367.00 Td (Modelagem do Diagrama) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 321.00 353.00 Td (UML de Casos) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 321.00 339.00 Td (de Uso no Draw.io;) Tj ET
+BT /F_Bold 12 Tf 0.200 0.550 0.950 rg 311.00 319.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 321.00 319.00 Td (Defini\347\343o das rela\347\365es) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 321.00 305.00 Td (<<include>> e <<extend>>) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 321.00 291.00 Td (na venda;) Tj ET
+BT /F_Bold 12 Tf 0.200 0.550 0.950 rg 311.00 271.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 321.00 271.00 Td (Cria\347\343o do schema) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 321.00 257.00 Td (relacional SQL com) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 321.00 243.00 Td (chaves estrangeiras.) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 538.00 50.00 m 742.00 50.00 l 746.42 50.00 750.00 53.58 750.00 58.00 c 750.00 527.00 l 750.00 531.42 746.42 535.00 742.00 535.00 c 538.00 535.00 l 533.58 535.00 530.00 531.42 530.00 527.00 c 530.00 58.00 l 530.00 53.58 533.58 50.00 538.00 50.00 c h B
+0.080 0.140 0.240 rg 549.00 496.00 m 731.00 496.00 l 733.21 496.00 735.00 497.79 735.00 500.00 c 735.00 516.00 l 735.00 518.21 733.21 520.00 731.00 520.00 c 549.00 520.00 l 546.79 520.00 545.00 518.21 545.00 516.00 c 545.00 500.00 l 545.00 497.79 546.79 496.00 549.00 496.00 c h f
+BT /F_Bold 10 Tf 0.100 0.750 0.650 rg 555.00 504.00 Td (SEMANA 3) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 545.00 473.00 Td (Arquitetura, Models) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 545.00 457.00 Td (e Reposit\363rios SQL) Tj ET
+0.220 0.280 0.380 RG 1.00 w 545.00 441.00 m 735.00 441.00 l S
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 546.00 415.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 556.00 415.00 Td (Cria\347\343o das entidades) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 556.00 401.00 Td (de dom\355nio \(Medicamento,) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 556.00 387.00 Td (Cliente, Venda\);) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 546.00 367.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 556.00 367.00 Td (Implementa\347\343o dos Repositories) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 556.00 353.00 Td (SQLite com Prepared) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 556.00 339.00 Td (Statements;) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 546.00 319.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 556.00 319.00 Td (Constru\347\343o do SqliteUnitOfWork) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 556.00 305.00 Td (para controle transacional;) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 546.00 285.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 556.00 285.00 Td (Estrutura\347\343o do container) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 556.00 271.00 Td (de inje\347\343o de) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 556.00 257.00 Td (depend\352ncias.) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 773.00 50.00 m 977.00 50.00 l 981.42 50.00 985.00 53.58 985.00 58.00 c 985.00 527.00 l 985.00 531.42 981.42 535.00 977.00 535.00 c 773.00 535.00 l 768.58 535.00 765.00 531.42 765.00 527.00 c 765.00 58.00 l 765.00 53.58 768.58 50.00 773.00 50.00 c h B
+0.080 0.140 0.240 rg 784.00 496.00 m 966.00 496.00 l 968.21 496.00 970.00 497.79 970.00 500.00 c 970.00 516.00 l 970.00 518.21 968.21 520.00 966.00 520.00 c 784.00 520.00 l 781.79 520.00 780.00 518.21 780.00 516.00 c 780.00 500.00 l 780.00 497.79 781.79 496.00 784.00 496.00 c h f
+BT /F_Bold 10 Tf 0.200 0.550 0.950 rg 790.00 504.00 Td (SEMANA 4) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 780.00 473.00 Td (Camada de) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 780.00 457.00 Td (Servi\347os e Regras de Neg\363cio) Tj ET
+0.220 0.280 0.380 RG 1.00 w 780.00 441.00 m 970.00 441.00 l S
+BT /F_Bold 12 Tf 0.200 0.550 0.950 rg 781.00 415.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 791.00 415.00 Td (Desenvolvimento de MedicamentoService,) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 791.00 401.00 Td (VendaService e EstoqueService;) Tj ET
+BT /F_Bold 12 Tf 0.200 0.550 0.950 rg 781.00 381.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 791.00 381.00 Td (Implementa\347\343o da regra) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 791.00 367.00 Td (de bloqueio 'Tudo) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 791.00 353.00 Td (ou Nada' sem estoque;) Tj ET
+BT /F_Bold 12 Tf 0.200 0.550 0.950 rg 781.00 333.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 791.00 333.00 Td (Aplica\347\343o das estruturas) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 791.00 319.00 Td (condicionais, la\347os while/for) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 791.00 305.00 Td (e listas;) Tj ET
+BT /F_Bold 12 Tf 0.200 0.550 0.950 rg 781.00 285.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 791.00 285.00 Td (Testes de consist\352ncia) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 791.00 271.00 Td (financeira e baixa) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 791.00 257.00 Td (at\364mica de saldo.) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 1008.00 50.00 m 1212.00 50.00 l 1216.42 50.00 1220.00 53.58 1220.00 58.00 c 1220.00 527.00 l 1220.00 531.42 1216.42 535.00 1212.00 535.00 c 1008.00 535.00 l 1003.58 535.00 1000.00 531.42 1000.00 527.00 c 1000.00 58.00 l 1000.00 53.58 1003.58 50.00 1008.00 50.00 c h B
+0.080 0.140 0.240 rg 1019.00 496.00 m 1201.00 496.00 l 1203.21 496.00 1205.00 497.79 1205.00 500.00 c 1205.00 516.00 l 1205.00 518.21 1203.21 520.00 1201.00 520.00 c 1019.00 520.00 l 1016.79 520.00 1015.00 518.21 1015.00 516.00 c 1015.00 500.00 l 1015.00 497.79 1016.79 496.00 1019.00 496.00 c h f
+BT /F_Bold 10 Tf 0.100 0.750 0.650 rg 1025.00 504.00 Td (SEMANA 5) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 1015.00 473.00 Td (Interface CLI,) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 1015.00 457.00 Td (Exporta\347\343o CSV e MVP Final) Tj ET
+0.220 0.280 0.380 RG 1.00 w 1015.00 441.00 m 1205.00 441.00 l S
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 1016.00 415.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 1026.00 415.00 Td (Constru\347\343o da interface) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 1026.00 401.00 Td (no terminal com) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 1026.00 387.00 Td (menus em match/case;) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 1016.00 367.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 1026.00 367.00 Td (Implementa\347\343o de CsvReportExporter) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 1026.00 353.00 Td (com matrizes bidimensionais;) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 1016.00 333.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 1026.00 333.00 Td (Gera\347\343o f\355sica de) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 1026.00 319.00 Td (relat\363rios e comprovantes) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 1026.00 305.00 Td (na pasta reports/;) Tj ET
+BT /F_Bold 12 Tf 0.100 0.750 0.650 rg 1016.00 285.00 Td (-) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 1026.00 285.00 Td (Valida\347\343o final dos) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 1026.00 271.00 Td (requisitos para a) Tj ET
+BT /F_Reg 10 Tf 0.850 0.880 0.920 rg 1026.00 257.00 Td (apresenta\347\343o da disciplina.) Tj ET
+endstream
+endobj
+27 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1280 720] /Resources << /Font << /F_Reg 3 0 R /F_Bold 4 0 R /F_Mono 5 0 R /F_MonoBold 6 0 R >> >> /Contents 28 0 R >>
+endobj
+28 0 obj
+<< /Length 7044 >>
+stream
+0.070 0.090 0.130 rg 0.00 0.00 1280.00 720.00 re f
+0.080 0.100 0.150 rg 0.00 660.00 1280.00 60.00 re f
+0.200 0.250 0.350 RG 1.20 w 0.00 660.00 m 1280.00 660.00 l S
+BT /F_Bold 11 Tf 0.550 0.650 0.800 rg 60.00 684.00 Td (UFAL - Bacharelado em Sistemas de Informa\347\343o) Tj ET
+BT /F_Bold 13 Tf 1.000 1.000 1.000 rg 380.00 684.00 Td (11. Demonstra\347\343o Pr\341tica e Encerramento \(10~15 Minutos\)) Tj ET
+BT /F_Reg 11 Tf 0.600 0.700 0.850 rg 990.00 684.00 Td (Kawe Firmino - Slide 11/11) Tj ET
+BT /F_Bold 26 Tf 0.980 0.980 0.980 rg 60.00 595.00 Td (Roteiro da Demonstra\347\343o ao Vivo no Terminal CLI) Tj ET
+BT /F_Reg 14 Tf 0.600 0.650 0.750 rg 60.00 570.00 Td (Demonstra\347\343o pr\341tica dos fluxos reais para valida\347\343o pela banca examinadora:) Tj ET
+0.110 0.140 0.200 rg 0.220 0.280 0.380 RG 1.50 w 68.00 55.00 m 732.00 55.00 l 736.42 55.00 740.00 58.58 740.00 63.00 c 740.00 532.00 l 740.00 536.42 736.42 540.00 732.00 540.00 c 68.00 540.00 l 63.58 540.00 60.00 536.42 60.00 532.00 c 60.00 63.00 l 60.00 58.58 63.58 55.00 68.00 55.00 c h B
+BT /F_Bold 13 Tf 0.100 0.750 0.650 rg 85.00 508.00 Td (PASSO A PASSO DA DEMONSTRA\307\303O DO SOFTWARE:) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 85.00 475.00 Td (- Passo 1: Inicializa\347\343o Limpa:) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 85.00 457.00 Td (Executar '$ python3 main.py' e exibir o menu principal operando com la\347o while e match/case.) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 85.00 431.00 Td (- Passo 2: Pesquisa e Cat\341logo:) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 85.00 413.00 Td (Consultar medicamento por c\363digo ou termo parcial, demonstrando busca insens\355vel a mai\372sculas \(LIKE\).) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 85.00 387.00 Td (- Passo 3: Ponto de Venda \(PDV\):) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 85.00 369.00 Td (Iniciar venda no balc\343o, adicionar m\372ltiplos itens com c\341lculo autom\341tico de subtotais e identifica\347\343o opcional.) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 85.00 343.00 Td (- Passo 4: Valida\347\343o de Erro \(Rollback\):) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 85.00 325.00 Td (Tentar vender quantidade superior ao estoque f\355sico e comprovar o lan\347amento de EstoqueInsuficienteError.) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 85.00 299.00 Td (- Passo 5: Conclus\343o da Venda e UoW:) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 85.00 281.00 Td (Concluir venda v\341lida comprovando a baixa at\364mica de saldo e gera\347\343o do cupom na tela.) Tj ET
+BT /F_Bold 13 Tf 0.980 0.980 0.980 rg 85.00 255.00 Td (- Passo 6: Exporta\347\343o de Arquivos CSV:) Tj ET
+BT /F_Reg 11 Tf 0.850 0.880 0.920 rg 85.00 237.00 Td (Acessar menu de relat\363rios, gerar arquivo f\355sico em reports/ e abrir o arquivo CSV para verifica\347\343o.) Tj ET
+0.090 0.110 0.160 rg 0.200 0.550 0.950 RG 1.50 w 768.00 55.00 m 1212.00 55.00 l 1216.42 55.00 1220.00 58.58 1220.00 63.00 c 1220.00 532.00 l 1220.00 536.42 1216.42 540.00 1212.00 540.00 c 768.00 540.00 l 763.58 540.00 760.00 536.42 760.00 532.00 c 760.00 63.00 l 760.00 58.58 763.58 55.00 768.00 55.00 c h B
+BT /F_Bold 13 Tf 0.200 0.550 0.950 rg 785.00 508.00 Td (CHECKLIST DE CONFORMIDADE DA RUBRICA:) Tj ET
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 785.00 478.00 Td (1,0 pt) Tj ET
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 835.00 478.00 Td (if/else e/ou match/case) Tj ET
+BT /F_Bold 9 Tf 0.600 0.650 0.750 rg 980.00 478.00 Td (IMPLEMENTADO E DEMONSTRADO) Tj ET
+0.160 0.200 0.280 RG 1.00 w 785.00 472.00 m 1200.00 472.00 l S
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 785.00 454.00 Td (1,0 pt) Tj ET
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 835.00 454.00 Td (while e/ou for) Tj ET
+BT /F_Bold 9 Tf 0.600 0.650 0.750 rg 980.00 454.00 Td (IMPLEMENTADO E DEMONSTRADO) Tj ET
+0.160 0.200 0.280 RG 1.00 w 785.00 448.00 m 1200.00 448.00 l S
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 785.00 430.00 Td (1,0 pt) Tj ET
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 835.00 430.00 Td (Subprogramas / Fun\347\365es) Tj ET
+BT /F_Bold 9 Tf 0.600 0.650 0.750 rg 980.00 430.00 Td (IMPLEMENTADO E DEMONSTRADO) Tj ET
+0.160 0.200 0.280 RG 1.00 w 785.00 424.00 m 1200.00 424.00 l S
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 785.00 406.00 Td (1,0 pt) Tj ET
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 835.00 406.00 Td (Matrizes e Listas) Tj ET
+BT /F_Bold 9 Tf 0.600 0.650 0.750 rg 980.00 406.00 Td (IMPLEMENTADO E DEMONSTRADO) Tj ET
+0.160 0.200 0.280 RG 1.00 w 785.00 400.00 m 1200.00 400.00 l S
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 785.00 382.00 Td (1,0 pt) Tj ET
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 835.00 382.00 Td (Strings e formata\347\365es) Tj ET
+BT /F_Bold 9 Tf 0.600 0.650 0.750 rg 980.00 382.00 Td (IMPLEMENTADO E DEMONSTRADO) Tj ET
+0.160 0.200 0.280 RG 1.00 w 785.00 376.00 m 1200.00 376.00 l S
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 785.00 358.00 Td (1,0 pt) Tj ET
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 835.00 358.00 Td (Dicion\341rios / Tuplas) Tj ET
+BT /F_Bold 9 Tf 0.600 0.650 0.750 rg 980.00 358.00 Td (IMPLEMENTADO E DEMONSTRADO) Tj ET
+0.160 0.200 0.280 RG 1.00 w 785.00 352.00 m 1200.00 352.00 l S
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 785.00 334.00 Td (1,0 pt) Tj ET
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 835.00 334.00 Td (Arquivos f\355sicos \(CSV\)) Tj ET
+BT /F_Bold 9 Tf 0.600 0.650 0.750 rg 980.00 334.00 Td (IMPLEMENTADO E DEMONSTRADO) Tj ET
+0.160 0.200 0.280 RG 1.00 w 785.00 328.00 m 1200.00 328.00 l S
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 785.00 310.00 Td (2,5 pt) Tj ET
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 835.00 310.00 Td (Apresenta\347\343o \(5 perguntas\)) Tj ET
+BT /F_Bold 9 Tf 0.600 0.650 0.750 rg 980.00 310.00 Td (TOTALMENTE COBERTO NOS SLIDES) Tj ET
+0.160 0.200 0.280 RG 1.00 w 785.00 304.00 m 1200.00 304.00 l S
+BT /F_Bold 11 Tf 0.100 0.750 0.650 rg 785.00 286.00 Td (0,5 pt) Tj ET
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 835.00 286.00 Td (Atividades semanais) Tj ET
+BT /F_Bold 9 Tf 0.600 0.650 0.750 rg 980.00 286.00 Td (DETALHADO NO SLIDE 10) Tj ET
+0.160 0.200 0.280 RG 1.00 w 785.00 280.00 m 1200.00 280.00 l S
+BT /F_Bold 11 Tf 1.000 0.800 0.200 rg 785.00 262.00 Td (10,0) Tj ET
+BT /F_Reg 11 Tf 0.980 0.980 0.980 rg 835.00 262.00 Td (NOTA TOTAL ESPERADA) Tj ET
+BT /F_Bold 9 Tf 1.000 0.800 0.200 rg 980.00 262.00 Td (CONFORMIDADE INTEGRAL) Tj ET
+0.160 0.200 0.280 RG 1.00 w 785.00 256.00 m 1200.00 256.00 l S
+0.050 0.070 0.100 rg 0.220 0.280 0.380 RG 1.20 w 791.00 150.00 m 1189.00 150.00 l 1192.31 150.00 1195.00 152.69 1195.00 156.00 c 1195.00 204.00 l 1195.00 207.31 1192.31 210.00 1189.00 210.00 c 791.00 210.00 l 787.69 210.00 785.00 207.31 785.00 204.00 c 785.00 156.00 l 785.00 152.69 787.69 150.00 791.00 150.00 c h B
+BT /F_MonoBold 12 Tf 0.100 0.750 0.650 rg 805.00 185.00 Td ($ cd farmacia && python3 main.py) Tj ET
+BT /F_Reg 10 Tf 0.600 0.650 0.750 rg 805.00 165.00 Td (Sistema pronto para execu\347\343o imediata no terminal) Tj ET
+BT /F_Bold 18 Tf 0.980 0.980 0.980 rg 785.00 110.00 Td (Muito obrigado pela aten\347\343o!) Tj ET
+BT /F_Reg 13 Tf 0.100 0.750 0.650 rg 785.00 85.00 Td (Aberto a d\372vidas e argui\347\343o da banca examinadora.) Tj ET
+endstream
+endobj
+xref
+0 29
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000191 00000 n 
+0000000288 00000 n 
+0000000390 00000 n 
+0000000485 00000 n 
+0000000585 00000 n 
+0000000761 00000 n 
+0000004327 00000 n 
+0000004504 00000 n 
+0000008829 00000 n 
+0000009007 00000 n 
+0000016763 00000 n 
+0000016941 00000 n 
+0000022819 00000 n 
+0000022997 00000 n 
+0000030243 00000 n 
+0000030421 00000 n 
+0000034552 00000 n 
+0000034730 00000 n 
+0000042332 00000 n 
+0000042510 00000 n 
+0000050339 00000 n 
+0000050517 00000 n 
+0000057847 00000 n 
+0000058025 00000 n 
+0000069899 00000 n 
+0000070077 00000 n 
+trailer
+<< /Size 29 /Root 1 0 R >>
+startxref
+77174
+%%EOF

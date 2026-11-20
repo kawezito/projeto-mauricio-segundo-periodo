@@ -1,28 +1,26 @@
-import csv
 from datetime import datetime, timedelta
 from decimal import Decimal
-from pathlib import Path
 from typing import Optional, List, Dict, Any
-from repositories.medicamento_repository import MedicamentoRepository
-from repositories.estoque_repository import EstoqueRepository
-from repositories.venda_repository import VendaRepository
-
-DEFAULT_REPORTS_DIR = Path(__file__).resolve().parent.parent / "reports"
+from interfaces.repositories import (
+    IMedicamentoRepository,
+    IEstoqueRepository,
+    IVendaRepository,
+)
+from interfaces.exporter import IReportExporter
 
 
 class RelatorioService:
     def __init__(
         self,
-        med_repo: MedicamentoRepository,
-        est_repo: EstoqueRepository,
-        venda_repo: VendaRepository,
-        reports_dir: Optional[Path | str] = None,
+        med_repo: IMedicamentoRepository,
+        est_repo: IEstoqueRepository,
+        venda_repo: IVendaRepository,
+        exporter: IReportExporter,
     ):
         self.med_repo = med_repo
         self.est_repo = est_repo
         self.venda_repo = venda_repo
-        self.reports_dir = Path(reports_dir) if reports_dir else DEFAULT_REPORTS_DIR
-        self.reports_dir.mkdir(parents=True, exist_ok=True)
+        self.exporter = exporter
 
     def relatorio_medicamentos_cadastrados(self) -> List[Dict[str, Any]]:
         return [m.to_dict() for m in self.med_repo.listar_todos()]
@@ -131,25 +129,12 @@ class RelatorioService:
 
         return matriz
 
-    def exportar_matriz_para_csv(self, matriz: List[List[Any]], caminho_arquivo: Path | str) -> str:
-        caminho = Path(caminho_arquivo)
-        caminho.parent.mkdir(parents=True, exist_ok=True)
-
-        with open(caminho, mode="w", newline="", encoding="utf-8") as f:
-            escritor = csv.writer(f, delimiter=";", quoting=csv.QUOTE_MINIMAL)
-            for linha in matriz:
-                escritor.writerow(linha)
-
-        return str(caminho.resolve())
-
     def exportar_estoque_csv(self, nome_arquivo: Optional[str] = None) -> str:
         nome = nome_arquivo or f"relatorio_estoque_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
-        caminho = self.reports_dir / nome
         matriz = self.gerar_matriz_estoque()
-        return self.exportar_matriz_para_csv(matriz, caminho)
+        return self.exporter.exportar(matriz, nome)
 
     def exportar_vendas_csv(self, nome_arquivo: Optional[str] = None) -> str:
         nome = nome_arquivo or f"relatorio_vendas_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
-        caminho = self.reports_dir / nome
         matriz = self.gerar_matriz_vendas()
-        return self.exportar_matriz_para_csv(matriz, caminho)
+        return self.exporter.exportar(matriz, nome)

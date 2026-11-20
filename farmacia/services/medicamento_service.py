@@ -3,7 +3,7 @@ from datetime import datetime
 from decimal import Decimal
 from typing import Optional, List, Dict, Any
 from models.medicamento import Medicamento
-from repositories.medicamento_repository import MedicamentoRepository
+from interfaces.repositories import IMedicamentoRepository
 from exceptions import (
     ValidacaoError,
     CodigoDuplicadoError,
@@ -13,7 +13,7 @@ from exceptions import (
 
 
 class MedicamentoService:
-    def __init__(self, repo: MedicamentoRepository):
+    def __init__(self, repo: IMedicamentoRepository):
         self.repo = repo
 
     def _validar_data(self, data_str: str) -> str:
@@ -45,59 +45,51 @@ class MedicamentoService:
         fabricante = str(dados.get("fabricante", "")).strip()
         categoria = str(dados.get("categoria", "")).strip()
         apresentacao = str(dados.get("apresentacao", "")).strip()
-        data_validade = str(dados.get("data_validade", "")).strip()
+        preco_bruto = dados.get("preco")
+        data_validade = dados.get("data_validade")
 
         if not codigo:
-            raise ValidacaoError("O campo 'codigo' é obrigatório.")
+            raise ValidacaoError("Código do medicamento é obrigatório.")
         if not nome:
-            raise ValidacaoError("O campo 'nome' é obrigatório.")
+            raise ValidacaoError("Nome do medicamento é obrigatório.")
         if not fabricante:
-            raise ValidacaoError("O campo 'fabricante' é obrigatório.")
+            raise ValidacaoError("Fabricante é obrigatório.")
         if not categoria:
-            raise ValidacaoError("O campo 'categoria' é obrigatório.")
+            raise ValidacaoError("Categoria é obrigatória.")
         if not apresentacao:
-            raise ValidacaoError("O campo 'apresentacao' é obrigatório.")
-        if not data_validade:
-            raise ValidacaoError("O campo 'data_validade' é obrigatório.")
-
-        data_validada = self._validar_data(data_validade)
-
-        if "preco_centavos" in dados:
-            preco_centavos = int(dados["preco_centavos"])
-            if preco_centavos < 0:
-                raise ValidacaoError("O preço de venda não pode ser negativo.")
-        elif "preco" in dados:
-            preco_centavos = self._converter_preco_centavos(dados["preco"])
-        else:
-            raise ValidacaoError("O preço de venda é obrigatório.")
-
-        estoque = int(dados.get("estoque", 0))
-        estoque_minimo = int(dados.get("estoque_minimo", 0))
-
-        if estoque < 0:
-            raise ValidacaoError("A quantidade em estoque não pode ser negativa.")
-        if estoque_minimo < 0:
-            raise ValidacaoError("A quantidade mínima de estoque não pode ser negativa.")
+            raise ValidacaoError("Apresentação é obrigatória.")
 
         existente = self.repo.buscar_por_codigo(codigo)
         if existente is not None:
-            raise CodigoDuplicadoError(f"Já existe um medicamento cadastrado com o código '{codigo}'.")
+            raise CodigoDuplicadoError(f"Já existe medicamento cadastrado com o código '{codigo}'.")
 
-        med = Medicamento(
+        preco_centavos = self._converter_preco_centavos(preco_bruto)
+        validade_validada = self._validar_data(str(data_validade))
+
+        try:
+            estoque = int(dados.get("estoque", 0))
+            estoque_minimo = int(dados.get("estoque_minimo", 0))
+        except (ValueError, TypeError) as err:
+            raise ValidacaoError("Estoque e estoque mínimo devem ser números inteiros.") from err
+
+        if estoque < 0 or estoque_minimo < 0:
+            raise ValidacaoError("Estoque e estoque mínimo não podem ser negativos.")
+
+        medicamento = Medicamento(
             codigo=codigo,
             nome=nome,
             fabricante=fabricante,
             categoria=categoria,
             apresentacao=apresentacao,
             preco_centavos=preco_centavos,
-            data_validade=data_validada,
             estoque=estoque,
             estoque_minimo=estoque_minimo,
+            data_validade=validade_validada,
         )
 
-        novo_id = self.repo.inserir(med)
-        med.id = novo_id
-        return med
+        novo_id = self.repo.inserir(medicamento)
+        medicamento.id = novo_id
+        return medicamento
 
     def atualizar(self, medicamento_id: int, dados: Dict[str, Any]) -> Medicamento:
         med = self.repo.buscar_por_id(medicamento_id)
@@ -105,30 +97,26 @@ class MedicamentoService:
             raise MedicamentoNaoEncontradoError(f"Medicamento de ID {medicamento_id} não encontrado.")
 
         novo_codigo = str(dados.get("codigo", med.codigo)).strip()
-        if not novo_codigo:
-            raise ValidacaoError("O código não pode ser vazio.")
-
-        if novo_codigo != med.codigo:
-            outro = self.repo.buscar_por_codigo(novo_codigo)
-            if outro is not None and outro.id != medicamento_id:
-                raise CodigoDuplicadoError(f"O código '{novo_codigo}' já está em uso por outro medicamento.")
-
         novo_nome = str(dados.get("nome", med.nome)).strip()
         novo_fab = str(dados.get("fabricante", med.fabricante)).strip()
         nova_cat = str(dados.get("categoria", med.categoria)).strip()
         nova_apres = str(dados.get("apresentacao", med.apresentacao)).strip()
 
-        if not novo_nome or not novo_fab or not nova_cat or not nova_apres:
-            raise ValidacaoError("Nome, fabricante, categoria e apresentação não podem ser vazios.")
+        if not novo_codigo or not novo_nome or not novo_fab or not nova_cat or not nova_apres:
+            raise ValidacaoError("Campos de texto obrigatórios não podem ficar vazios.")
 
-        nova_validade = str(dados.get("data_validade", med.data_validade)).strip()
-        validade_validada = self._validar_data(nova_validade)
+        if novo_codigo != med.codigo:
+            outro = self.repo.buscar_por_codigo(novo_codigo)
+            if outro is not None and outro.id != med.id:
+                raise CodigoDuplicadoError(f"O código '{novo_codigo}' já pertence a outro medicamento.")
 
-        if "preco_centavos" in dados:
-            preco_centavos = int(dados["preco_centavos"])
-            if preco_centavos < 0:
-                raise ValidacaoError("Preço em centavos não pode ser negativo.")
-        elif "preco" in dados:
+        validade_validada = (
+            self._validar_data(str(dados["data_validade"]))
+            if "data_validade" in dados
+            else med.data_validade
+        )
+
+        if "preco" in dados:
             preco_centavos = self._converter_preco_centavos(dados["preco"])
         else:
             preco_centavos = med.preco_centavos
