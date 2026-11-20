@@ -4,10 +4,13 @@ from typing import Optional, List, Dict, Any
 from models.venda import Venda
 from models.item_venda import ItemVenda
 from models.movimentacao_estoque import MovimentacaoEstoque
-from repositories.venda_repository import VendaRepository
-from repositories.medicamento_repository import MedicamentoRepository
-from repositories.estoque_repository import EstoqueRepository
-from repositories.cliente_repository import ClienteRepository
+from interfaces.repositories import (
+    IVendaRepository,
+    IMedicamentoRepository,
+    IEstoqueRepository,
+    IClienteRepository,
+)
+from interfaces.transaction import IUnitOfWork
 from exceptions import (
     ValidacaoError,
     MedicamentoNaoEncontradoError,
@@ -20,15 +23,18 @@ from exceptions import (
 class VendaService:
     def __init__(
         self,
-        venda_repo: VendaRepository,
-        med_repo: MedicamentoRepository,
-        est_repo: EstoqueRepository,
-        cli_repo: ClienteRepository,
+        
+        venda_repo: IVendaRepository,
+        med_repo: IMedicamentoRepository,
+        est_repo: IEstoqueRepository,
+        cli_repo: IClienteRepository,
+        uow: IUnitOfWork,
     ):
         self.venda_repo = venda_repo
         self.med_repo = med_repo
         self.est_repo = est_repo
         self.cli_repo = cli_repo
+        self.uow = uow
 
     def _obter_data_hora_atual(self) -> str:
         return datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
@@ -125,23 +131,31 @@ class VendaService:
             itens=itens_preparados,
         )
 
-        venda_id = self.venda_repo.inserir_venda_completa(venda)
-        venda.id = venda_id
+        try:
+            with self.uow:
+                venda_id = self.venda_repo.inserir_venda(venda)
+                venda.id = venda_id
 
-        for item in itens_preparados:
-            med = medicamentos_cache[item.medicamento_id]
-            novo_estoque = med.estoque - item.quantidade
-            self.med_repo.atualizar_estoque(item.medicamento_id, novo_estoque)
+                for item in itens_preparados:
+                    item.venda_id = venda_id
+                    self.venda_repo.inserir_item(item)
 
-            mov_saida = MovimentacaoEstoque(
-                medicamento_id=item.medicamento_id,
-                medicamento_nome=med.nome,
-                tipo="SAIDA",
-                quantidade=item.quantidade,
-                data_movimentacao=timestamp,
-                descricao=f"Saída por Venda #{venda_id}",
-            )
-            self.est_repo.registrar_movimentacao(mov_saida)
+                    med = medicamentos_cache[item.medicamento_id]
+                    novo_estoque = med.estoque - item.quantidade
+                    self.med_repo.atualizar_estoque(item.medicamento_id, novo_estoque)
+                    med.estoque = novo_estoque
+
+                    mov_saida = MovimentacaoEstoque(
+                        medicamento_id=item.medicamento_id,
+                        tipo="SAIDA",
+                        quantidade=item.quantidade,
+                        data_movimentacao=timestamp,
+                        descricao=f"Saída por Venda #{venda_id}",
+                    )
+                    self.est_repo.registrar_movimentacao(mov_saida)
+        except Exception:
+            self.uow.rollback()
+            raise
 
         return venda
 

@@ -1,6 +1,6 @@
 from typing import Optional, List, Dict, Any
 from models.cliente import Cliente
-from repositories.cliente_repository import ClienteRepository
+from interfaces.repositories import IClienteRepository
 from exceptions import (
     ValidacaoError,
     ClienteNaoEncontradoError,
@@ -9,7 +9,7 @@ from exceptions import (
 
 
 class ClienteService:
-    def __init__(self, repo: ClienteRepository):
+    def __init__(self, repo: IClienteRepository):
         self.repo = repo
 
     def cadastrar(self, dados: Dict[str, Any]) -> Cliente:
@@ -54,7 +54,7 @@ class ClienteService:
 
         if self.repo.tem_vendas_associadas(cliente_id):
             raise IntegridadeReferencialError(
-                f"Não é permitido excluir o cliente '{cliente.nome}' pois existem vendas associadas a ele no arquivo de vendas."
+                f"Não é permitido excluir o cliente '{cliente.nome}' pois existem vendas associadas a ele no histórico."
             )
 
         return self.repo.excluir(cliente_id)

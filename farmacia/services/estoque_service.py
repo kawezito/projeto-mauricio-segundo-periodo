@@ -2,8 +2,8 @@ from datetime import datetime, timedelta
 from typing import Optional, List, Dict, Any
 from models.medicamento import Medicamento
 from models.movimentacao_estoque import MovimentacaoEstoque
-from repositories.medicamento_repository import MedicamentoRepository
-from repositories.estoque_repository import EstoqueRepository
+from interfaces.repositories import IMedicamentoRepository, IEstoqueRepository
+from interfaces.transaction import IUnitOfWork
 from exceptions import (
     ValidacaoError,
     MedicamentoNaoEncontradoError,
@@ -13,11 +13,13 @@ from exceptions import (
 class EstoqueService:
     def __init__(
         self,
-        med_repo: MedicamentoRepository,
-        est_repo: EstoqueRepository,
+        med_repo: IMedicamentoRepository,
+        est_repo: IEstoqueRepository,
+        uow: IUnitOfWork,
     ):
         self.med_repo = med_repo
         self.est_repo = est_repo
+        self.uow = uow
 
     def _obter_data_hora_atual(self) -> str:
         return datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
@@ -39,17 +41,16 @@ class EstoqueService:
         timestamp = data_movimentacao or self._obter_data_hora_atual()
         novo_estoque = med.estoque + quantidade
 
-        self.med_repo.atualizar_estoque(medicamento_id, novo_estoque)
-
-        mov = MovimentacaoEstoque(
-            medicamento_id=medicamento_id,
-            medicamento_nome=med.nome,
-            tipo="ENTRADA",
-            quantidade=quantidade,
-            data_movimentacao=timestamp,
-            descricao=descricao,
-        )
-        mov_id = self.est_repo.registrar_movimentacao(mov)
+        with self.uow:
+            self.med_repo.atualizar_estoque(medicamento_id, novo_estoque)
+            mov = MovimentacaoEstoque(
+                medicamento_id=medicamento_id,
+                tipo="ENTRADA",
+                quantidade=quantidade,
+                data_movimentacao=timestamp,
+                descricao=descricao,
+            )
+            mov_id = self.est_repo.registrar_movimentacao(mov)
 
         return {
             "movimentacao_id": mov_id,

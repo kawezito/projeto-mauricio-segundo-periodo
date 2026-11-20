@@ -19,3 +19,12 @@ venv/
 # Relatórios CSV gerados em tempo de execução (preservar .gitkeep)
 farmacia/reports/*.csv
 reports/*.csv
+
+# Banco de dados local SQLite
+*.db
+*.sqlite3
+*.sqlite
+*.db-journal
+*.db-wal
+*.db-shm
+

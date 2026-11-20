@@ -1,83 +1,55 @@
-import json
-from pathlib import Path
+import sqlite3
 from typing import Optional, List
 from models.cliente import Cliente
+from interfaces.repositories import IClienteRepository
 
-DEFAULT_DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "clientes.json"
 
+class ClienteRepository(IClienteRepository):
+    def __init__(self, conn: sqlite3.Connection):
+        self.conn = conn
 
-class ClienteRepository:
-    def __init__(self, caminho_arquivo: Optional[Path | str] = None, venda_repo=None):
-        self.caminho_arquivo = Path(caminho_arquivo) if caminho_arquivo else DEFAULT_DATA_FILE
-        self.venda_repo = venda_repo
-        self.caminho_arquivo.parent.mkdir(parents=True, exist_ok=True)
-        if not self.caminho_arquivo.exists():
-            self._salvar_lista([])
-
-    def _carregar_lista(self) -> List[Cliente]:
-        if not self.caminho_arquivo.exists():
-            return []
-        try:
-            with open(self.caminho_arquivo, "r", encoding="utf-8") as f:
-                dados = json.load(f)
-                return [
-                    Cliente(
-                        id=d.get("id"),
-                        nome=d.get("nome", ""),
-                        telefone=d.get("telefone"),
-                        email=d.get("email"),
-                    )
-                    for d in dados
-                ]
-        except (json.JSONDecodeError, FileNotFoundError):
-            return []
-
-    def _salvar_lista(self, clientes: List[Cliente]) -> None:
-        dados = [c.to_dict() for c in clientes]
-        with open(self.caminho_arquivo, "w", encoding="utf-8") as f:
-            json.dump(dados, f, ensure_ascii=False, indent=4)
+    def _row_para_objeto(self, row: sqlite3.Row) -> Cliente:
+        return Cliente(
+            id=row["id"],
+            nome=row["nome"],
+            telefone=row["telefone"],
+            email=row["email"],
+        )
 
     def inserir(self, cliente: Cliente) -> int:
-        clientes = self._carregar_lista()
-        proximo_id = max([c.id for c in clientes if c.id is not None], default=0) + 1
-        cliente.id = proximo_id
-        clientes.append(cliente)
-        self._salvar_lista(clientes)
+        sql = "INSERT INTO Cliente (nome, telefone, email) VALUES (?, ?, ?)"
+        cursor = self.conn.execute(sql, (cliente.nome, cliente.telefone, cliente.email))
+        cliente.id = cursor.lastrowid
         return cliente.id
 
     def atualizar(self, cliente: Cliente) -> bool:
-        clientes = self._carregar_lista()
-        for idx, c in enumerate(clientes):
-            if c.id == cliente.id:
-                clientes[idx] = cliente
-                self._salvar_lista(clientes)
-                return True
-        return False
+        sql = "UPDATE Cliente SET nome = ?, telefone = ?, email = ? WHERE id = ?"
+        cursor = self.conn.execute(sql, (cliente.nome, cliente.telefone, cliente.email, cliente.id))
+        return cursor.rowcount > 0
 
     def excluir(self, cliente_id: int) -> bool:
-        clientes = self._carregar_lista()
-        iniciais = len(clientes)
-        clientes = [c for c in clientes if c.id != cliente_id]
-        if len(clientes) < iniciais:
-            self._salvar_lista(clientes)
-            return True
-        return False
+        sql = "DELETE FROM Cliente WHERE id = ?"
+        cursor = self.conn.execute(sql, (cliente_id,))
+        return cursor.rowcount > 0
 
     def buscar_por_id(self, cliente_id: int) -> Optional[Cliente]:
-        for c in self._carregar_lista():
-            if c.id == cliente_id:
-                return c
-        return None
+        sql = "SELECT * FROM Cliente WHERE id = ?"
+        cursor = self.conn.execute(sql, (cliente_id,))
+        row = cursor.fetchone()
+        return self._row_para_objeto(row) if row else None
 
     def buscar_por_nome(self, termo: str) -> List[Cliente]:
-        termo_limpo = termo.strip().lower()
-        encontrados = [c for c in self._carregar_lista() if termo_limpo in c.nome.lower()]
-        return sorted(encontrados, key=lambda x: x.nome.lower())
+        sql = "SELECT * FROM Cliente WHERE LOWER(nome) LIKE LOWER(?) ORDER BY nome ASC"
+        cursor = self.conn.execute(sql, (f"%{termo.strip()}%",))
+        return [self._row_para_objeto(row) for row in cursor.fetchall()]
 
     def listar_todos(self) -> List[Cliente]:
-        return sorted(self._carregar_lista(), key=lambda x: x.nome.lower())
+        sql = "SELECT * FROM Cliente ORDER BY nome ASC"
+        cursor = self.conn.execute(sql)
+        return [self._row_para_objeto(row) for row in cursor.fetchall()]
 
     def tem_vendas_associadas(self, cliente_id: int) -> bool:
-        if self.venda_repo is not None:
-            return self.venda_repo.cliente_tem_vendas(cliente_id)
-        return False
+        sql = "SELECT COUNT(*) AS total FROM Venda WHERE cliente_id = ?"
+        cursor = self.conn.execute(sql, (cliente_id,))
+        row = cursor.fetchone()
+        return bool(row["total"] > 0) if row else False
